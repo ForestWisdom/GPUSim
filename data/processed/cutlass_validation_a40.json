@@ -1,0 +1,5771 @@
+{
+  "results": [
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        1,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        1
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 1,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 1,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        1,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        1
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 1,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 1,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        1,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        1
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 1,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 1,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        1,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        1
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 1,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 1,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        1,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        2
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        1,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        2
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        1,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        2
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        1,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        2
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        1,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        1,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        1,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        1
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 1,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 1,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        1,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        1
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 1,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 1,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        1,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        1
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 1,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 1,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        1,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        1
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 1,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 1,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        1,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        2
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        1,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        2
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        1,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        2
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        1,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        2
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        1,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        1,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        1,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        1
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 1,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 1,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        1,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        1
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 1,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 1,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        1,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        1
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 1,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 1,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        1,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        1
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 1,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 1,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        1,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        2
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        1,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        2
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        1,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        2
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        1,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        1,
+        2
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        1,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        1,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        1,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        1,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        1,
+        3,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        1
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 3,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 3,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        3,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        1
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 3,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 3,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        2,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        1
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 3,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 3,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        4,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        1
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 3,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 3,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 2,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        1,
+        3,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        2
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        3,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        2
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        2,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        2
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        4,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        2
+      ],
+      "k": 32,
+      "m": 128,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 2,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        1,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        1,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        1,
+        3,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        1
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 3,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 3,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        3,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        1
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 3,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 3,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        2,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        1
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 3,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 3,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        4,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        1
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 3,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 3,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 2,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        1,
+        3,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        2
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        3,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        2
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        2,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        2
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        4,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        2
+      ],
+      "k": 33,
+      "m": 128,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 2,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        1,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        1
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 2,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        1,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        2,
+        2
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        1,
+        3,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        1
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 3,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 3,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        3,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        1
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 3,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 3,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        2,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        1
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 3,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 3,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        4,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        1
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 3,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 3,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 2,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        1,
+        3,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        2
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        3,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        2
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        2,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        2
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        4,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        1,
+        3,
+        2
+      ],
+      "k": 96,
+      "m": 128,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 2,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        1
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        1,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        1
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        1
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        1
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        2
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        1,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        2
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        2
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        2
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        2,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        2,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        4,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        4,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        2,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        2,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        4,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        4,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        1
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        1,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        1
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        1
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        1
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        2
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        1,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        2
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        2
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        2
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        2,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        2,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        4,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        4,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        2,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        2,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        4,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        4,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        1
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        1,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        1
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        1
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        2,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        1
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 2,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 2,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        2
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        1,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        2
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        2
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        2,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        1,
+        2
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        2,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        2,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        4,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        4,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        2,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        2,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        4,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        4,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 128,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        2,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        2,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        4,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        4,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        2,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        2,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        4,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        4,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        2,
+        3,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        1
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        3,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        1
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        4,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        1
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 32,
+      "grid_shape": [
+        8,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        1
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 2,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        2,
+        3,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        2
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 12,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 12,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        3,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        2
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 12,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 12,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        4,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        2
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 12,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 12,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 16,
+      "grid_shape": [
+        8,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        2
+      ],
+      "k": 32,
+      "m": 130,
+      "match": true,
+      "model_tasks": 12,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 12,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 2,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        2,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        2,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        4,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        4,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        2,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        2,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        4,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        4,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        2,
+        3,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        1
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        3,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        1
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        4,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        1
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 40,
+      "grid_shape": [
+        8,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        1
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 2,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        2,
+        3,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        2
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 12,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 12,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        3,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        2
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 12,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 12,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        4,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        2
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 12,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 12,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 24,
+      "grid_shape": [
+        8,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        2
+      ],
+      "k": 33,
+      "m": 130,
+      "match": true,
+      "model_tasks": 12,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 12,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 2,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        2,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        2,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        4,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        4,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        1
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 4,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 4,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        2,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        2,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        4,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        4,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        2,
+        2
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 8,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 8,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 128
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        2,
+        3,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        1
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 1,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        3,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        1
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 1,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        4,
+        2,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        1
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 1,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 96,
+      "grid_shape": [
+        8,
+        1,
+        1
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        1
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 6,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 6,
+      "split_k": 1,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 2,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        2,
+        3,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        2
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 12,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 12,
+      "split_k": 2,
+      "swizzle": "Identity",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        3,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        2
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 12,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 12,
+      "split_k": 2,
+      "swizzle": "Horizontal",
+      "swizzle_log_tile": 0,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        4,
+        2,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        2
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 12,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 12,
+      "split_k": 2,
+      "swizzle": "Identity2",
+      "swizzle_log_tile": 1,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    },
+    {
+      "device": 5,
+      "device_name": "NVIDIA A40",
+      "dtype": "f16",
+      "gemm_k_size": 48,
+      "grid_shape": [
+        8,
+        1,
+        2
+      ],
+      "grid_tiled_shape": [
+        2,
+        3,
+        2
+      ],
+      "k": 96,
+      "m": 130,
+      "match": true,
+      "model_tasks": 12,
+      "n": 129,
+      "only_in_model": [],
+      "only_in_reference": [],
+      "reference_tasks": 12,
+      "split_k": 2,
+      "swizzle": "Identity4",
+      "swizzle_log_tile": 2,
+      "tb_k": 32,
+      "tb_m": 128,
+      "tb_n": 64
+    }
+  ],
+  "summary": {
+    "match_rate": 1.0,
+    "matched_cases": 192,
+    "mismatch_groups": [],
+    "mismatched_cases": 0,
+    "total_cases": 192
+  }
+}
