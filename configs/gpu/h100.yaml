@@ -1,0 +1,8 @@
+name: H100
+num_sms: 132
+tensor_throughput_per_sm: 4096
+simt_throughput_per_sm: 256
+dram_bw_gbps: 3000
+l2_bw_gbps: 9000
+smem_bw_gbps_per_sm: 256
+clock_mhz: 1620

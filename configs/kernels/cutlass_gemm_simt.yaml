@@ -1,0 +1,9 @@
+name: cutlass_simt_gemm
+backend: cutlass
+pipeline: simt
+dtype: f32
+threadblock_shape: [128, 64, 8]
+warp_shape: [64, 32, 8]
+instruction_shape: [1, 1, 1]
+swizzle: Identity
+split_k_default: 1

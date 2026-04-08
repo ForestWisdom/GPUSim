@@ -1,0 +1,8 @@
+name: A100
+num_sms: 108
+tensor_throughput_per_sm: 2048
+simt_throughput_per_sm: 128
+dram_bw_gbps: 1555
+l2_bw_gbps: 7000
+smem_bw_gbps_per_sm: 192
+clock_mhz: 1410

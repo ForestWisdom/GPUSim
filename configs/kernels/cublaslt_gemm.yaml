@@ -1,0 +1,9 @@
+name: cublaslt_gemm
+backend: cublaslt
+pipeline: tensor_core
+dtype: f16
+threadblock_shape: [128, 128, 32]
+warp_shape: [64, 64, 32]
+instruction_shape: [16, 8, 16]
+swizzle: Identity
+split_k_default: 1

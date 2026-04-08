@@ -1,0 +1,24 @@
+name: A40
+architecture: Ampere
+gpu_codename: GA102
+num_sms: 84
+cuda_cores: 10752
+tensor_cores: 336
+memory_size_gb: 48
+memory_type: GDDR6
+dram_bw_gbps: 696
+l2_cache_kb: 6144
+clock_mhz: 1740
+tdp_w: 300
+
+# Analytical model parameters.
+# tensor_throughput_per_sm is derived from official dense FP16 Tensor Core throughput.
+# l2_bw_gbps and smem_bw_gbps_per_sm are initial model coefficients, not vendor-published specs.
+tensor_throughput_per_sm: 1024
+simt_throughput_per_sm: 128
+l2_bw_gbps: 3000
+smem_bw_gbps_per_sm: 128
+
+sources:
+  - https://www.nvidia.com/en-eu/data-center/a40/
+  - https://www.nvidia.com/content/PDF/nvidia-ampere-ga-102-gpu-architecture-whitepaper-v2.pdf
