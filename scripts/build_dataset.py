@@ -28,17 +28,17 @@ def load_gpu_spec(path: str) -> GpuSpec:
     )
 
 
-def parse_args() -> argparse.Namespace:
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", required=True, help="CSV with M,N,K,latency_us")
     parser.add_argument("--output", required=True, help="Output processed CSV path")
     parser.add_argument("--gpu", required=True, help="GPU yaml config")
     parser.add_argument("--kernel", required=True, help="Kernel yaml config")
-    return parser.parse_args()
+    return parser.parse_args(argv)
 
 
-def main() -> None:
-    args = parse_args()
+def main(argv: list[str] | None = None) -> None:
+    args = parse_args(argv)
     gpu = load_gpu_spec(args.gpu)
     kernel_meta = load_kernel_meta(args.kernel)
     frame = pd.read_csv(args.input)
