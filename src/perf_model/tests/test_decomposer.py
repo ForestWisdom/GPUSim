@@ -123,3 +123,52 @@ def test_swizzle_changes_order_but_not_logical_coverage() -> None:
     identity_order = [(task.tile_idx_m, task.tile_idx_n, task.tile_idx_k) for task in identity_tasks]
     horizontal_order = [(task.tile_idx_m, task.tile_idx_n, task.tile_idx_k) for task in horizontal_tasks]
     assert identity_order != horizontal_order
+
+
+def test_split_k_greater_than_one_scales_task_count_by_k_partitions() -> None:
+    problem = GemmProblem(M=256, N=256, K=128, split_k_slices=4)
+    tasks = CutlassGemmDecomposer().decompose(problem, _make_kernel())
+
+    assert len(tasks) == 16
+    coverage = _coverage_by_output_tile(tasks)
+    assert len(coverage) == 4
+    assert all(len(tile_tasks) == 4 for tile_tasks in coverage.values())
+    for tile_tasks in coverage.values():
+        ordered = sorted(tile_tasks, key=lambda task: task.k0)
+        assert [(task.k0, task.k1) for task in ordered] == [
+            (0, 32),
+            (32, 64),
+            (64, 96),
+            (96, 128),
+        ]
+
+
+def test_identity_n_swizzles_preserve_logical_coverage() -> None:
+    problem = GemmProblem(M=256, N=640, K=64, split_k_slices=1)
+    identity_tasks = CutlassGemmDecomposer().decompose(problem, _make_kernel("Identity"))
+    identity2_tasks = CutlassGemmDecomposer().decompose(problem, _make_kernel("Identity2"))
+    identity4_tasks = CutlassGemmDecomposer().decompose(problem, _make_kernel("Identity4"))
+
+    def _signature(tasks: list) -> set[tuple[int, int, int, int, int, int]]:
+        return {
+            (task.tile_idx_m, task.tile_idx_n, task.m0, task.m1, task.n0, task.n1)
+            for task in tasks
+        }
+
+    assert len(identity_tasks) == len(identity2_tasks) == len(identity4_tasks) == 10
+    assert _signature(identity_tasks) == _signature(identity2_tasks) == _signature(identity4_tasks)
+    assert [(task.tile_idx_m, task.tile_idx_n) for task in identity_tasks] != [
+        (task.tile_idx_m, task.tile_idx_n) for task in identity2_tasks
+    ]
+
+
+def test_k_not_multiple_of_tb_k_keeps_tail_iteration_in_last_task() -> None:
+    problem = GemmProblem(M=128, N=128, K=65, split_k_slices=1)
+    tasks = CutlassGemmDecomposer().decompose(problem, _make_kernel())
+
+    assert len(tasks) == 1
+    task = tasks[0]
+    assert (task.k0, task.k1) == (0, 65)
+    assert task.k_eff == 65
+    assert task.gemm_k_iterations == 3
+    assert task.is_edge_k

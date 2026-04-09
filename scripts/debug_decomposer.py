@@ -90,17 +90,18 @@ def main() -> None:
         return
 
     print(
-        "task_idx tile_idx(m,n,k) output_range(m,n,k) "
-        "effective(m,n,k) gemm_k_iterations edge(m,n,k)"
+        "task_idx tile_idx_m tile_idx_n tile_idx_k "
+        "m0:m1 n0:n1 k0:k1 gemm_k_iterations "
+        "m_eff n_eff k_eff edge_m edge_n edge_k"
     )
     for task in tasks:
         print(
             f"{task.task_idx:03d} "
-            f"({task.tile_idx_m},{task.tile_idx_n},{task.tile_idx_k}) "
-            f"m[{task.m0}:{task.m1}) n[{task.n0}:{task.n1}) k[{task.k0}:{task.k1}) "
-            f"eff=({task.m_eff},{task.n_eff},{task.k_eff}) "
-            f"iters={task.gemm_k_iterations} "
-            f"edge=({int(task.is_edge_m)},{int(task.is_edge_n)},{int(task.is_edge_k)})"
+            f"{task.tile_idx_m} {task.tile_idx_n} {task.tile_idx_k} "
+            f"{task.m0}:{task.m1} {task.n0}:{task.n1} {task.k0}:{task.k1} "
+            f"{task.gemm_k_iterations} "
+            f"{task.m_eff} {task.n_eff} {task.k_eff} "
+            f"{int(task.is_edge_m)} {int(task.is_edge_n)} {int(task.is_edge_k)}"
         )
 
 

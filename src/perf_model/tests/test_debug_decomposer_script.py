@@ -38,6 +38,7 @@ def test_debug_decomposer_script_runs_case_a() -> None:
     assert "task_count=4" in result.stdout
     assert "logical_output_tiles=4" in result.stdout
     assert "empty_tasks=0" in result.stdout
+    assert "tile_idx_m tile_idx_n tile_idx_k m0:m1 n0:n1 k0:k1 gemm_k_iterations" in result.stdout
 
 
 def test_debug_decomposer_script_shows_cutlass_k_partition_metadata() -> None:
@@ -76,3 +77,38 @@ def test_debug_decomposer_script_shows_cutlass_k_partition_metadata() -> None:
     assert "k_align=8" in result.stdout
     assert "gemm_k_size=24" in result.stdout
     assert "effective_split_k=2" in result.stdout
+
+
+def test_debug_decomposer_script_prints_requested_task_fields() -> None:
+    repo_root = Path(__file__).resolve().parents[3]
+    script = repo_root / "scripts" / "debug_decomposer.py"
+
+    result = subprocess.run(
+        [
+            sys.executable,
+            str(script),
+            "--m",
+            "130",
+            "--n",
+            "129",
+            "--k",
+            "33",
+            "--tb-m",
+            "128",
+            "--tb-n",
+            "128",
+            "--tb-k",
+            "32",
+            "--split-k",
+            "2",
+        ],
+        cwd=repo_root,
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+
+    assert result.returncode == 0, result.stderr
+    assert "tile_idx_m tile_idx_n tile_idx_k m0:m1 n0:n1 k0:k1 gemm_k_iterations" in result.stdout
+    assert "0 0 0 0:128 0:128 0:24 1" in result.stdout
+    assert "0 0 1 0:128 0:128 24:33 1" in result.stdout
