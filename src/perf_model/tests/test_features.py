@@ -29,9 +29,9 @@ def test_tensor_core_math_ops_matches_2mnk() -> None:
         num_sms=1,
         tensor_throughput_per_sm=64.0,
         simt_throughput_per_sm=32.0,
-        dram_bw_gbps=1.0,
-        l2_bw_gbps=1.0,
-        smem_bw_gbps_per_sm=128.0,
+        dram_bw_bytes_per_cycle=1.0,
+        l2_bw_bytes_per_cycle=1.0,
+        smem_bw_bytes_per_cycle_per_sm=128.0,
         clock_mhz=1000.0,
     )
     kernel = KernelMeta(
@@ -111,9 +111,9 @@ def test_simt_feature_builder_matches_new_task_feature_schema() -> None:
         num_sms=1,
         tensor_throughput_per_sm=64.0,
         simt_throughput_per_sm=32.0,
-        dram_bw_gbps=64.0,
-        l2_bw_gbps=128.0,
-        smem_bw_gbps_per_sm=256.0,
+        dram_bw_bytes_per_cycle=64.0,
+        l2_bw_bytes_per_cycle=128.0,
+        smem_bw_bytes_per_cycle_per_sm=256.0,
         clock_mhz=1000.0,
     )
     kernel = KernelMeta(
@@ -136,3 +136,75 @@ def test_simt_feature_builder_matches_new_task_feature_schema() -> None:
     assert sm_features.total_tensor_ops == task_features.tensor_ops
     assert sm_features.estimated_busy_cycles >= task_features.tensor_cycles
     assert len(gpu_features) > 0
+
+
+def test_tensor_core_sm_aggregation_applies_same_sm_reuse_proxy() -> None:
+    gpu = GpuSpec(
+        name="toy",
+        num_sms=1,
+        tensor_throughput_per_sm=64.0,
+        simt_throughput_per_sm=32.0,
+        dram_bw_bytes_per_cycle=64.0,
+        l2_bw_bytes_per_cycle=128.0,
+        smem_bw_bytes_per_cycle_per_sm=256.0,
+        clock_mhz=1000.0,
+    )
+    kernel = KernelMeta(
+        name="cutlass_tensorop",
+        backend="cutlass",
+        pipeline="tensor_core",
+        threadblock_shape=(128, 128, 32),
+        warp_shape=(64, 64, 32),
+        instruction_shape=(16, 8, 16),
+        dtype="f16",
+    )
+    builder = TensorCoreFeatureBuilder()
+
+    task_left = GemmTask(
+        tile_m=128,
+        tile_n=128,
+        tile_k=32,
+        m0=0,
+        m1=128,
+        n0=0,
+        n1=128,
+        k0=0,
+        k1=32,
+        m_eff=128,
+        n_eff=128,
+        k_eff=32,
+        gemm_k_iterations=1,
+        task_idx=0,
+        tile_idx_m=0,
+        tile_idx_n=0,
+        tile_idx_k=0,
+    )
+    task_right = GemmTask(
+        tile_m=128,
+        tile_n=128,
+        tile_k=32,
+        m0=0,
+        m1=128,
+        n0=128,
+        n1=256,
+        k0=0,
+        k1=32,
+        m_eff=128,
+        n_eff=128,
+        k_eff=32,
+        gemm_k_iterations=1,
+        task_idx=1,
+        tile_idx_m=0,
+        tile_idx_n=1,
+        tile_idx_k=0,
+    )
+
+    task_features = [
+        builder.build_task_features(task_left, 0, gpu, kernel),
+        builder.build_task_features(task_right, 0, gpu, kernel),
+    ]
+    sm_features = builder.aggregate_sm_features(0, task_features)
+
+    assert sm_features.total_bytes_global_raw > sm_features.total_bytes_global
+    assert sm_features.reuse_a_factor > 1.0
+    assert sm_features.reuse_b_factor == 1.0

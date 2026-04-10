@@ -32,9 +32,9 @@ class GpuSpec:
     num_sms: int
     tensor_throughput_per_sm: float   # ops / cycle / SM
     simt_throughput_per_sm: float     # ops / cycle / SM
-    dram_bw_gbps: float               # interpreted as bytes / cycle in current model
-    l2_bw_gbps: float                 # interpreted as bytes / cycle in current model
-    smem_bw_gbps_per_sm: float        # interpreted as bytes / cycle / SM
+    dram_bw_bytes_per_cycle: float
+    l2_bw_bytes_per_cycle: float
+    smem_bw_bytes_per_cycle_per_sm: float
     clock_mhz: float
 
 
@@ -71,6 +71,9 @@ class GemmTask:
 class TaskFeatures:
     task_idx: int
     sm_id: int
+    tile_idx_m: int
+    tile_idx_n: int
+    tile_idx_k: int
 
     tensor_ops: float
     tensor_cycles: float
@@ -93,6 +96,7 @@ class SmFeatures:
     total_tensor_ops: float
     total_tensor_cycles: float
 
+    total_bytes_global_raw: float
     total_bytes_global: float
 
     total_global_cycles: float
@@ -100,6 +104,8 @@ class SmFeatures:
     total_smem_cycles: float
 
     estimated_busy_cycles: float
+    reuse_a_factor: float
+    reuse_b_factor: float
 
 
 def dataclass_to_dict(value: object) -> dict[str, object]:

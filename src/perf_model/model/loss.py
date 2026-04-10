@@ -15,7 +15,7 @@ class MAPELoss(nn.Module):
         return ((pred - target).abs() / denom).mean()
 
 
-def build_loss(name: str = "mse") -> nn.Module:
+def build_loss(name: str = "mape") -> nn.Module:
     name = name.lower()
     if name == "mape":
         return MAPELoss()

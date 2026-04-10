@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 from dataclasses import dataclass
 from pathlib import Path
@@ -21,9 +22,34 @@ class CutlassBenchmarkResult(ProfileResult):
     grid_tiled_shape: tuple[int, int, int]
 
 
+def resolve_cutlass_root(repo_root: Path) -> Path:
+    env_root = os.environ.get("CUTLASS_ROOT")
+    candidates: list[Path] = []
+    if env_root:
+        candidates.append(Path(env_root))
+    candidates.append(repo_root / "thirdparty" / "cutlass")
+
+    try:
+        common_dir = subprocess.check_output(
+            ["git", "rev-parse", "--git-common-dir"],
+            cwd=repo_root,
+            text=True,
+        ).strip()
+    except subprocess.CalledProcessError:
+        common_dir = ""
+    if common_dir:
+        candidates.append(Path(common_dir).resolve().parent / "thirdparty" / "cutlass")
+
+    for candidate in candidates:
+        if (candidate / "include" / "cutlass" / "cutlass.h").exists():
+            return candidate
+
+    raise FileNotFoundError("could not find CUTLASS headers; set CUTLASS_ROOT or add thirdparty/cutlass")
+
+
 def build_cutlass_gemm_bench(repo_root: Path) -> Path:
     source = repo_root / "tools" / "cutlass_gemm_bench.cu"
-    include_root = repo_root / "thirdparty" / "cutlass"
+    include_root = resolve_cutlass_root(repo_root)
     binary = repo_root / ".cache" / "cutlass_gemm_bench"
     binary.parent.mkdir(exist_ok=True)
 

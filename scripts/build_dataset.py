@@ -4,8 +4,15 @@
 from __future__ import annotations
 
 import argparse
+import sys
+from pathlib import Path
 
 import pandas as pd
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+SRC_ROOT = PROJECT_ROOT / "src"
+if str(SRC_ROOT) not in sys.path:
+    sys.path.insert(0, str(SRC_ROOT))
 
 from perf_model.common.types import GpuSpec
 from perf_model.common.utils import load_yaml
@@ -21,9 +28,9 @@ def load_gpu_spec(path: str) -> GpuSpec:
         num_sms=int(config["num_sms"]),
         tensor_throughput_per_sm=float(config["tensor_throughput_per_sm"]),
         simt_throughput_per_sm=float(config["simt_throughput_per_sm"]),
-        dram_bw_gbps=float(config["dram_bw_gbps"]),
-        l2_bw_gbps=float(config["l2_bw_gbps"]),
-        smem_bw_gbps_per_sm=float(config["smem_bw_gbps_per_sm"]),
+        dram_bw_bytes_per_cycle=float(config["dram_bw_bytes_per_cycle"]),
+        l2_bw_bytes_per_cycle=float(config["l2_bw_bytes_per_cycle"]),
+        smem_bw_bytes_per_cycle_per_sm=float(config["smem_bw_bytes_per_cycle_per_sm"]),
         clock_mhz=float(config["clock_mhz"]),
     )
 

@@ -42,9 +42,9 @@ def load_gpu_spec(path: str | Path) -> GpuSpec:
         num_sms=int(data["num_sms"]),
         tensor_throughput_per_sm=float(data["tensor_throughput_per_sm"]),
         simt_throughput_per_sm=float(data["simt_throughput_per_sm"]),
-        dram_bw_gbps=float(data["dram_bw_gbps"]),
-        l2_bw_gbps=float(data["l2_bw_gbps"]),
-        smem_bw_gbps_per_sm=float(data["smem_bw_gbps_per_sm"]),
+        dram_bw_bytes_per_cycle=float(data["dram_bw_bytes_per_cycle"]),
+        l2_bw_bytes_per_cycle=float(data["l2_bw_bytes_per_cycle"]),
+        smem_bw_bytes_per_cycle_per_sm=float(data["smem_bw_bytes_per_cycle_per_sm"]),
         clock_mhz=float(data["clock_mhz"]),
     )
 

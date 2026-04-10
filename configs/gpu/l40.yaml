@@ -2,7 +2,7 @@ name: L40
 num_sms: 142
 tensor_throughput_per_sm: 1536
 simt_throughput_per_sm: 128
-dram_bw_gbps: 864
-l2_bw_gbps: 4000
-smem_bw_gbps_per_sm: 160
+dram_bw_bytes_per_cycle: 346.9879518072289
+l2_bw_bytes_per_cycle: 4000
+smem_bw_bytes_per_cycle_per_sm: 160
 clock_mhz: 2490

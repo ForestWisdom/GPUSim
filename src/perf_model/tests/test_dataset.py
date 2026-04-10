@@ -9,9 +9,9 @@ def test_dataset_builder_aligns_features_and_labels() -> None:
         num_sms=4,
         tensor_throughput_per_sm=64.0,
         simt_throughput_per_sm=32.0,
-        dram_bw_gbps=1.0,
-        l2_bw_gbps=1.0,
-        smem_bw_gbps_per_sm=128.0,
+        dram_bw_bytes_per_cycle=1.0,
+        l2_bw_bytes_per_cycle=1.0,
+        smem_bw_bytes_per_cycle_per_sm=128.0,
         clock_mhz=1000.0,
     )
     kernel = KernelMeta(
@@ -41,9 +41,9 @@ def test_dataset_builder_uses_row_level_split_k_and_swizzle_overrides() -> None:
         num_sms=4,
         tensor_throughput_per_sm=64.0,
         simt_throughput_per_sm=32.0,
-        dram_bw_gbps=1.0,
-        l2_bw_gbps=1.0,
-        smem_bw_gbps_per_sm=128.0,
+        dram_bw_bytes_per_cycle=1.0,
+        l2_bw_bytes_per_cycle=1.0,
+        smem_bw_bytes_per_cycle_per_sm=128.0,
         clock_mhz=1000.0,
     )
     kernel = KernelMeta(

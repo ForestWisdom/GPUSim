@@ -18,9 +18,9 @@ def test_round_robin_assigns_every_task_once() -> None:
         num_sms=3,
         tensor_throughput_per_sm=1.0,
         simt_throughput_per_sm=1.0,
-        dram_bw_gbps=1.0,
-        l2_bw_gbps=1.0,
-        smem_bw_gbps_per_sm=1.0,
+        dram_bw_bytes_per_cycle=1.0,
+        l2_bw_bytes_per_cycle=1.0,
+        smem_bw_bytes_per_cycle_per_sm=1.0,
         clock_mhz=1000,
     )
 

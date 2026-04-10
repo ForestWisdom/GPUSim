@@ -141,6 +141,7 @@ def test_split_k_greater_than_one_scales_task_count_by_k_partitions() -> None:
             (64, 96),
             (96, 128),
         ]
+        assert [task.tile_idx_k for task in ordered] == [0, 1, 2, 3]
 
 
 def test_identity_n_swizzles_preserve_logical_coverage() -> None:
@@ -160,6 +161,43 @@ def test_identity_n_swizzles_preserve_logical_coverage() -> None:
     assert [(task.tile_idx_m, task.tile_idx_n) for task in identity_tasks] != [
         (task.tile_idx_m, task.tile_idx_n) for task in identity2_tasks
     ]
+
+
+def test_swizzles_preserve_task_count_and_output_coverage_under_split_k() -> None:
+    problem = GemmProblem(M=256, N=384, K=65, split_k_slices=2)
+    decomposer = CutlassGemmDecomposer()
+    task_sets = {
+        swizzle: decomposer.decompose(problem, _make_kernel(swizzle))
+        for swizzle in ("Identity", "Identity2", "Identity4", "Horizontal")
+    }
+
+    expected_task_count = 12
+    expected_signature = {
+        (task.tile_idx_m, task.tile_idx_n, task.tile_idx_k, task.m0, task.m1, task.n0, task.n1, task.k0, task.k1)
+        for task in task_sets["Identity"]
+    }
+
+    for tasks in task_sets.values():
+        assert len(tasks) == expected_task_count
+        assert {
+            (task.tile_idx_m, task.tile_idx_n, task.tile_idx_k, task.m0, task.m1, task.n0, task.n1, task.k0, task.k1)
+            for task in tasks
+        } == expected_signature
+
+
+def test_split_k_output_tiles_map_to_multiple_distinct_tile_k_tasks() -> None:
+    problem = GemmProblem(M=256, N=256, K=65, split_k_slices=2)
+    tasks = CutlassGemmDecomposer().decompose(problem, _make_kernel())
+
+    coverage = _coverage_by_output_tile(tasks)
+    assert len(coverage) == 4
+    for tile_tasks in coverage.values():
+        ordered = sorted(tile_tasks, key=lambda task: task.tile_idx_k)
+        assert [task.tile_idx_k for task in ordered] == [0, 1]
+        assert [(task.k0, task.k1, task.gemm_k_iterations) for task in ordered] == [
+            (0, 40, 2),
+            (40, 65, 1),
+        ]
 
 
 def test_k_not_multiple_of_tb_k_keeps_tail_iteration_in_last_task() -> None:

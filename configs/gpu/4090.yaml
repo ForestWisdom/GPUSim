@@ -6,18 +6,19 @@ cuda_cores: 16384
 tensor_cores: 512
 memory_size_gb: 24
 memory_type: GDDR6X
-dram_bw_gbps: 1008
+dram_bw_bytes_per_cycle: 400.0
 l2_cache_kb: 73728
 clock_mhz: 2520
 tdp_w: 450
 
 # Analytical model parameters.
 # tensor_throughput_per_sm is derived from official dense FP16 Tensor Core throughput.
-# l2_bw_gbps and smem_bw_gbps_per_sm are initial model coefficients, not vendor-published specs.
+# l2_bw_bytes_per_cycle and smem_bw_bytes_per_cycle_per_sm are initial model coefficients.
+# dram_bw_bytes_per_cycle is derived from the official 1008 GB/s bandwidth and clock_mhz.
 tensor_throughput_per_sm: 1024
 simt_throughput_per_sm: 128
-l2_bw_gbps: 4000
-smem_bw_gbps_per_sm: 160
+l2_bw_bytes_per_cycle: 4000
+smem_bw_bytes_per_cycle_per_sm: 160
 
 sources:
   - https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4090/

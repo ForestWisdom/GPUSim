@@ -33,16 +33,44 @@ def main() -> None:
     feature_columns = [column for column in frame.columns if column.startswith("f_")]
     if isinstance(payload, dict) and "model_state_dict" in payload:
         hidden_sizes = payload.get("hidden_sizes")
-        model = LatencyMLP(input_dim=len(feature_columns), hidden_sizes=hidden_sizes)
+        use_batch_norm = payload.get("use_batch_norm")
+        dropout = payload.get("dropout")
+        if use_batch_norm is None:
+            use_batch_norm = any("running_mean" in key for key in payload["model_state_dict"])
+        if dropout is None:
+            dropout = 0.1 if use_batch_norm else 0.0
+        model = LatencyMLP(
+            input_dim=len(feature_columns),
+            hidden_sizes=hidden_sizes,
+            dropout=dropout,
+            use_batch_norm=use_batch_norm,
+        )
         model.load_state_dict(payload["model_state_dict"])
         feature_mean = payload.get("feature_mean")
         feature_std = payload.get("feature_std")
+        target_kind = payload.get("target_kind", "latency")
+        theoretical_cycle_feature = payload.get("theoretical_cycle_feature", "f_33")
     else:
-        model = LatencyMLP(input_dim=len(feature_columns))
+        use_batch_norm = any("running_mean" in key for key in payload)
+        dropout = 0.1 if use_batch_norm else 0.0
+        model = LatencyMLP(
+            input_dim=len(feature_columns),
+            dropout=dropout,
+            use_batch_norm=use_batch_norm,
+        )
         model.load_state_dict(payload)
         feature_mean = None
         feature_std = None
-    metrics = evaluate_frame(model, frame, feature_mean=feature_mean, feature_std=feature_std)
+        target_kind = "latency"
+        theoretical_cycle_feature = "f_33"
+    metrics = evaluate_frame(
+        model,
+        frame,
+        feature_mean=feature_mean,
+        feature_std=feature_std,
+        target_kind=target_kind,
+        theoretical_cycle_feature=theoretical_cycle_feature,
+    )
     for key, value in metrics.items():
         print(f"{key}={value:.6f}")
 

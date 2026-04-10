@@ -6,7 +6,7 @@ cuda_cores: 18176
 tensor_cores: 568
 memory_size_gb: 48
 memory_type: GDDR6
-dram_bw_gbps: 864
+dram_bw_bytes_per_cycle: 342.85714285714283
 l2_cache_kb: 98304
 clock_mhz: 2520
 tdp_w: 350
@@ -15,11 +15,12 @@ tdp_w: 350
 # tensor_throughput_per_sm is initialized from official dense FP16 Tensor Core throughput.
 # clock_mhz is inferred from official FP32 throughput and CUDA core count because the product page
 # states rates are based on boost clock but does not expose the clock directly in the summary table.
-# l2_bw_gbps and smem_bw_gbps_per_sm are initial model coefficients, not vendor-published specs.
+# l2_bw_bytes_per_cycle and smem_bw_bytes_per_cycle_per_sm are initial model coefficients.
+# dram_bw_bytes_per_cycle is derived from the official 864 GB/s bandwidth and clock_mhz.
 tensor_throughput_per_sm: 1024
 simt_throughput_per_sm: 128
-l2_bw_gbps: 4000
-smem_bw_gbps_per_sm: 160
+l2_bw_bytes_per_cycle: 4000
+smem_bw_bytes_per_cycle_per_sm: 160
 
 sources:
   - https://www.nvidia.com/en-us/data-center/l40s/

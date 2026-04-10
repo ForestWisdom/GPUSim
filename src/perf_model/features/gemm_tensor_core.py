@@ -4,6 +4,7 @@ from __future__ import annotations
 from perf_model.common.constants import DTYPE_BYTES
 from perf_model.common.types import GemmTask, GpuSpec, KernelMeta, SmFeatures, TaskFeatures
 from perf_model.features.base import FeatureBuilder
+from perf_model.features.memory_model import estimate_same_sm_memory_reuse
 
 
 def _safe_div(numerator: float, denominator: float) -> float:
@@ -37,16 +38,19 @@ class TensorCoreFeatureBuilder(FeatureBuilder):
         # read A/B, read+write C/D once
         bytes_global = bytes_a + bytes_b + 2.0 * bytes_c
 
-        global_cycles = _safe_div(bytes_global, gpu.dram_bw_gbps)
-        l2_cycles = _safe_div(bytes_global, gpu.l2_bw_gbps)
+        global_cycles = _safe_div(bytes_global, gpu.dram_bw_bytes_per_cycle)
+        l2_cycles = _safe_div(bytes_global, gpu.l2_bw_bytes_per_cycle)
 
         # For shared memory, first-order approximation:
         # A/B tiles are staged through shared memory
-        smem_cycles = _safe_div(bytes_a + bytes_b, gpu.smem_bw_gbps_per_sm)
+        smem_cycles = _safe_div(bytes_a + bytes_b, gpu.smem_bw_bytes_per_cycle_per_sm)
 
         return TaskFeatures(
             task_idx=task.task_idx,
             sm_id=sm_id,
+            tile_idx_m=task.tile_idx_m,
+            tile_idx_n=task.tile_idx_n,
+            tile_idx_k=task.tile_idx_k,
             tensor_ops=tensor_ops,
             tensor_cycles=tensor_cycles,
             bytes_a=bytes_a,
@@ -62,9 +66,15 @@ class TensorCoreFeatureBuilder(FeatureBuilder):
         total_tensor_ops = sum(item.tensor_ops for item in task_features)
         total_tensor_cycles = sum(item.tensor_cycles for item in task_features)
 
-        total_bytes_global = sum(item.bytes_global for item in task_features)
-        total_global_cycles = sum(item.global_cycles for item in task_features)
-        total_l2_cycles = sum(item.l2_cycles for item in task_features)
+        memory_reuse = estimate_same_sm_memory_reuse(task_features)
+        total_bytes_global_raw = memory_reuse["total_bytes_global_raw"]
+        total_bytes_global = memory_reuse["total_bytes_global_effective"]
+        raw_global_cycles = sum(item.global_cycles for item in task_features)
+        raw_l2_cycles = sum(item.l2_cycles for item in task_features)
+        total_global_cycles = raw_global_cycles * _safe_div(
+            total_bytes_global, total_bytes_global_raw
+        )
+        total_l2_cycles = raw_l2_cycles
         total_smem_cycles = sum(item.smem_cycles for item in task_features)
 
         estimated_busy_cycles = max(
@@ -79,20 +89,24 @@ class TensorCoreFeatureBuilder(FeatureBuilder):
             task_count=len(task_features),
             total_tensor_ops=total_tensor_ops,
             total_tensor_cycles=total_tensor_cycles,
+            total_bytes_global_raw=total_bytes_global_raw,
             total_bytes_global=total_bytes_global,
             total_global_cycles=total_global_cycles,
             total_l2_cycles=total_l2_cycles,
             total_smem_cycles=total_smem_cycles,
             estimated_busy_cycles=estimated_busy_cycles,
+            reuse_a_factor=memory_reuse["reuse_a_factor"],
+            reuse_b_factor=memory_reuse["reuse_b_factor"],
         )
 
     def aggregate_gpu_features(self, sm_features: list[SmFeatures]) -> list[float]:
         if not sm_features:
-            return [0.0] * 15
+            return [0.0] * 19
 
         gpu_total_tensor_ops = float(sum(item.total_tensor_ops for item in sm_features))
         gpu_total_tensor_cycles_sum = float(sum(item.total_tensor_cycles for item in sm_features))
 
+        gpu_total_bytes_global_raw = float(sum(item.total_bytes_global_raw for item in sm_features))
         gpu_total_bytes_global = float(sum(item.total_bytes_global for item in sm_features))
         gpu_total_global_cycles_sum = float(sum(item.total_global_cycles for item in sm_features))
         gpu_total_l2_cycles_sum = float(sum(item.total_l2_cycles for item in sm_features))
@@ -111,6 +125,8 @@ class TensorCoreFeatureBuilder(FeatureBuilder):
         max_task_count = float(max(item.task_count for item in sm_features))
         avg_task_count = float(sum(item.task_count for item in sm_features) / len(sm_features))
         active_sms = float(sum(1 for item in sm_features if item.task_count > 0))
+        avg_reuse_a_factor = float(sum(item.reuse_a_factor for item in sm_features) / len(sm_features))
+        avg_reuse_b_factor = float(sum(item.reuse_b_factor for item in sm_features) / len(sm_features))
 
         return [
             # GPU total
@@ -132,4 +148,7 @@ class TensorCoreFeatureBuilder(FeatureBuilder):
             max_task_count,
             avg_task_count,
             active_sms,
+            gpu_total_bytes_global_raw,
+            avg_reuse_a_factor,
+            avg_reuse_b_factor,
         ]
