@@ -8,6 +8,8 @@ import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 
+REPO_ROOT = Path(__file__).resolve().parents[3]
+
 
 @dataclass(slots=True)
 class ProfileResult:
@@ -20,6 +22,16 @@ class CutlassBenchmarkResult(ProfileResult):
     task_count: int
     swizzle_log_tile: int
     grid_tiled_shape: tuple[int, int, int]
+
+
+def get_cublaslt_bench_binary_path() -> Path:
+    return REPO_ROOT / ".cache" / "cublaslt_gemm_bench"
+
+
+def build_cublaslt_bench_compile_cmd() -> str:
+    source = REPO_ROOT / "tools" / "cublaslt_gemm_bench.cu"
+    output = get_cublaslt_bench_binary_path()
+    return f"nvcc -O3 -std=c++17 {source} -o {output} -lcublasLt -lcublas -lcudart"
 
 
 def resolve_cutlass_root(repo_root: Path) -> Path:
