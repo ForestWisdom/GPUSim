@@ -4,6 +4,7 @@ from pathlib import Path
 
 from scripts.collect_cublas_profiles import (
     build_cublas_collect_command,
+    collect_cublas_profile_rows,
     iter_cublas_profile_cases,
     write_profile_rows,
 )
@@ -55,3 +56,15 @@ def test_build_cublas_collect_command_targets_device_4() -> None:
     assert "--m 128" in cmd
     assert "--n 128" in cmd
     assert "--k 128" in cmd
+
+
+def test_collect_cublas_profile_rows_returns_kernel_name_rows() -> None:
+    rows = collect_cublas_profile_rows(
+        cases=[{"M": 128, "N": 128, "K": 128}],
+        device=4,
+        max_cases=1,
+        dry_run=True,
+    )
+
+    assert len(rows) == 1
+    assert "kernel_name" in rows[0]

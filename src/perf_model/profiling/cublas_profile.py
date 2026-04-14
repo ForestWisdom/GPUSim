@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import csv
 import json
+from pathlib import Path
 
 
 def is_reduction_kernel_name(kernel_name: str) -> bool:
@@ -61,4 +63,29 @@ def normalize_cublas_profile_row(
         "gpu_name": str(bench_payload["gpu_name"]),
         "latency_us": float(bench_payload["latency_us"]),
         "kernel_name": str(bench_payload["kernel_name"]),
+    }
+
+
+def extract_main_kernel_from_nsys_cuda_gpu_trace(path: str | Path) -> dict[str, int | str]:
+    rows: list[dict[str, str]] = []
+    with Path(path).open("r", encoding="utf-8", newline="") as handle:
+        reader = csv.DictReader(handle)
+        for row in reader:
+            name = str(row.get("Name", ""))
+            if not name or name.startswith("["):
+                continue
+            rows.append(row)
+
+    if not rows:
+        raise ValueError(f"no CUDA kernel rows found in {path}")
+
+    main = max(rows, key=lambda row: int(row.get("Duration (ns)", "0") or "0"))
+    return {
+        "kernel_name": str(main["Name"]),
+        "grid_x": int(main.get("GrdX", "1") or "1"),
+        "grid_y": int(main.get("GrdY", "1") or "1"),
+        "grid_z": int(main.get("GrdZ", "1") or "1"),
+        "block_x": int(main.get("BlkX", "1") or "1"),
+        "block_y": int(main.get("BlkY", "1") or "1"),
+        "block_z": int(main.get("BlkZ", "1") or "1"),
     }
