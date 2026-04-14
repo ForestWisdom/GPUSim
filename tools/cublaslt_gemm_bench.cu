@@ -197,7 +197,8 @@ int main(int argc, char** argv) {
               << "\"latency_us\":" << latency_us << ","
               << "\"iterations\":" << opts.iterations << ","
               << "\"device\":" << opts.device << ","
-              << "\"gpu_name\":\"" << prop.name << "\""
+              << "\"gpu_name\":\"" << prop.name << "\","
+              << "\"kernel_name\":\"cublaslt_unknown_kernel\""
               << "}" << std::endl;
 
     cudaEventDestroy(start);
