@@ -1,6 +1,7 @@
 from perf_model.kernel_desc.cublas_empirical import summarize_gemm_call
 from perf_model.profiling.cublas_profile import (
     is_reduction_kernel_name,
+    normalize_cublas_profile_row,
     normalize_bench_result,
 )
 
@@ -57,3 +58,19 @@ def test_summarized_rows_can_feed_empirical_summary() -> None:
     summary = summarize_gemm_call(rows)
 
     assert summary["main_kernel_task_count"] == 4
+
+
+def test_normalize_cublas_profile_row_keeps_kernel_name() -> None:
+    row = normalize_cublas_profile_row(
+        problem={"M": 128, "N": 256, "K": 512},
+        bench_payload={
+            "latency_us": 12.0,
+            "device": 4,
+            "gpu_name": "RTX 4090",
+            "kernel_name": "ampere_h16816gemm_128x128_ldg8",
+        },
+    )
+
+    assert row["kernel_name"] == "ampere_h16816gemm_128x128_ldg8"
+    assert row["M"] == 128
+    assert row["latency_us"] == 12.0

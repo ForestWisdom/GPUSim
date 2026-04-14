@@ -44,4 +44,21 @@ def parse_cublas_bench_stdout(stdout: str) -> dict[str, int | float | str]:
         "latency_us": float(payload["latency_us"]),
         "device": int(payload["device"]),
         "gpu_name": str(payload["gpu_name"]),
+        "kernel_name": str(payload["kernel_name"]),
+    }
+
+
+def normalize_cublas_profile_row(
+    problem: dict[str, int],
+    bench_payload: dict[str, int | float | str],
+) -> dict[str, int | float | str]:
+    return {
+        "M": int(problem["M"]),
+        "N": int(problem["N"]),
+        "K": int(problem["K"]),
+        "dtype": "f16",
+        "device": int(bench_payload["device"]),
+        "gpu_name": str(bench_payload["gpu_name"]),
+        "latency_us": float(bench_payload["latency_us"]),
+        "kernel_name": str(bench_payload["kernel_name"]),
     }
