@@ -24,6 +24,12 @@ class CutlassBenchmarkResult(ProfileResult):
     grid_tiled_shape: tuple[int, int, int]
 
 
+@dataclass(slots=True)
+class CublasLtBenchmarkResult(ProfileResult):
+    device: int
+    gpu_name: str
+
+
 def get_cublaslt_bench_binary_path() -> Path:
     return REPO_ROOT / ".cache" / "cublaslt_gemm_bench"
 
@@ -32,6 +38,57 @@ def build_cublaslt_bench_compile_cmd() -> str:
     source = REPO_ROOT / "tools" / "cublaslt_gemm_bench.cu"
     output = get_cublaslt_bench_binary_path()
     return f"nvcc -O3 -std=c++17 {source} -o {output} -lcublasLt -lcublas -lcudart"
+
+
+def build_cublaslt_gemm_bench(repo_root: Path) -> Path:
+    source = repo_root / "tools" / "cublaslt_gemm_bench.cu"
+    binary = repo_root / ".cache" / "cublaslt_gemm_bench"
+    binary.parent.mkdir(exist_ok=True)
+
+    if binary.exists() and binary.stat().st_mtime >= source.stat().st_mtime:
+        return binary
+
+    subprocess.run(build_cublaslt_bench_compile_cmd().split(), check=True, cwd=repo_root)
+    return binary
+
+
+def run_cublaslt_gemm_bench(
+    repo_root: Path,
+    *,
+    device: int,
+    m: int,
+    n: int,
+    k: int,
+    dtype: str = "f16",
+    iterations: int = 20,
+    warmup: int = 5,
+) -> CublasLtBenchmarkResult:
+    binary = build_cublaslt_gemm_bench(repo_root)
+    command = [
+        str(binary),
+        "--device",
+        str(device),
+        "--m",
+        str(m),
+        "--n",
+        str(n),
+        "--k",
+        str(k),
+        "--dtype",
+        dtype,
+        "--iterations",
+        str(iterations),
+        "--warmup",
+        str(warmup),
+    ]
+    result = subprocess.run(command, check=True, cwd=repo_root, capture_output=True, text=True)
+    payload = json.loads(result.stdout)
+    return CublasLtBenchmarkResult(
+        latency_us=float(payload["latency_us"]),
+        repeats=int(payload["iterations"]),
+        device=int(payload["device"]),
+        gpu_name=str(payload["gpu_name"]),
+    )
 
 
 def resolve_cutlass_root(repo_root: Path) -> Path:

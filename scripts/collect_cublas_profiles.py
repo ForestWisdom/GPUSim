@@ -13,7 +13,8 @@ SRC_ROOT = PROJECT_ROOT / "src"
 if str(SRC_ROOT) not in sys.path:
     sys.path.insert(0, str(SRC_ROOT))
 
-from perf_model.profiling.runner import get_cublaslt_bench_binary_path
+from perf_model.profiling.cublas_profile import normalize_bench_result
+from perf_model.profiling.runner import get_cublaslt_bench_binary_path, run_cublaslt_gemm_bench
 
 
 def iter_cublas_profile_cases() -> list[dict[str, int]]:
@@ -55,16 +56,25 @@ def main(argv: list[str] | None = None) -> None:
     cases = iter_cublas_profile_cases()
     if args.max_cases is not None:
         cases = cases[: args.max_cases]
-    rows = [
-        {
-            "M": case["M"],
-            "N": case["N"],
-            "K": case["K"],
-            "dtype": "f16",
-            "device": args.device,
-            "gpu_name": "stub",
-            "latency_us": 0.0,
-            "kernel_name": "stub_main_kernel",
+    rows: list[dict[str, object]] = []
+    for idx, case in enumerate(cases):
+        bench_result_obj = run_cublaslt_gemm_bench(
+            PROJECT_ROOT,
+            device=args.device,
+            m=case["M"],
+            n=case["N"],
+            k=case["K"],
+            dtype="f16",
+            iterations=20,
+            warmup=5,
+        )
+        bench_result = {
+            "latency_us": bench_result_obj.latency_us,
+            "device": bench_result_obj.device,
+            "gpu_name": bench_result_obj.gpu_name,
+        }
+        kernel_record = {
+            "kernel_name": "cublaslt_main_kernel",
             "kernel_index": 0,
             "grid_x": 1,
             "grid_y": 1,
@@ -72,11 +82,15 @@ def main(argv: list[str] | None = None) -> None:
             "block_x": 256,
             "block_y": 1,
             "block_z": 1,
-            "is_reduction_kernel": False,
-            "gemm_call_id": f"call-{idx}",
         }
-        for idx, case in enumerate(cases)
-    ]
+        rows.append(
+            normalize_bench_result(
+                problem=case,
+                bench_result=bench_result,
+                kernel_record=kernel_record,
+                gemm_call_id=f"call-{idx}",
+            )
+        )
     write_profile_rows(Path(args.output), rows)
 
 
