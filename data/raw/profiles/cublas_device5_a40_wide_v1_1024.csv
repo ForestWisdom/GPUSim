@@ -1,0 +1,1025 @@
+M,N,K,dtype,device,gpu_name,latency_us,kernel_name
+16,128,32,f16,5,NVIDIA A40,6.5088,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_32x1_nn_align8>(T1::Params)
+32,128,33,f16,5,NVIDIA A40,6.536,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+64,64,64,f16,5,NVIDIA A40,6.6336,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+96,160,48,f16,5,NVIDIA A40,5.5824,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+127,255,95,f16,5,NVIDIA A40,7.5936,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+128,128,128,f16,5,NVIDIA A40,8.704,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+129,128,128,f16,5,NVIDIA A40,7.0624,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+130,129,33,f16,5,NVIDIA A40,6.7648,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+191,257,65,f16,5,NVIDIA A40,6.8416,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+255,255,255,f16,5,NVIDIA A40,6.632,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+256,256,128,f16,5,NVIDIA A40,7.0816,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+257,255,65,f16,5,NVIDIA A40,5.728,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+384,128,3072,f16,5,NVIDIA A40,12.616,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+512,512,4096,f16,5,NVIDIA A40,34.4224,ampere_fp16_s16816gemm_fp16_64x64_ldg8_f2f_stages_64x5_nn
+768,4096,1536,f16,5,NVIDIA A40,95.16,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize160x128x32_stage3_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+1024,8192,2048,f16,5,NVIDIA A40,382.464,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize160x128x32_stage3_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+2048,4096,4096,f16,5,NVIDIA A40,569.72,ampere_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_nn
+4096,4096,4096,f16,5,NVIDIA A40,1117.51,ampere_fp16_s16816gemm_fp16_256x128_ldg8_f2f_stages_32x3_nn
+8192,16384,8192,f16,5,NVIDIA A40,15095.8,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_128x256_32x3_nn_align8>(T1::Params)
+16,128,33,f16,5,NVIDIA A40,6.312,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,128,36,f16,5,NVIDIA A40,5.8896,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,128,40,f16,5,NVIDIA A40,6.12,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,128,45,f16,5,NVIDIA A40,10.4736,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,128,48,f16,5,NVIDIA A40,5.4288,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,128,51,f16,5,NVIDIA A40,7.9472,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,128,57,f16,5,NVIDIA A40,5.6096,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,128,64,f16,5,NVIDIA A40,5.688,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,128,72,f16,5,NVIDIA A40,5.3168,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,128,80,f16,5,NVIDIA A40,6.0192,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,128,81,f16,5,NVIDIA A40,5.7152,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,128,91,f16,5,NVIDIA A40,5.6224,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,128,96,f16,5,NVIDIA A40,8.6688,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,128,102,f16,5,NVIDIA A40,5.5856,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,128,112,f16,5,NVIDIA A40,9.0576,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,128,114,f16,5,NVIDIA A40,5.632,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,128,128,f16,5,NVIDIA A40,8.6256,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,128,144,f16,5,NVIDIA A40,8.5344,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,128,160,f16,5,NVIDIA A40,8.68,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,128,161,f16,5,NVIDIA A40,5.6768,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,128,181,f16,5,NVIDIA A40,5.592,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,128,192,f16,5,NVIDIA A40,8.7088,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,128,203,f16,5,NVIDIA A40,5.4336,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,128,224,f16,5,NVIDIA A40,8.5984,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,128,228,f16,5,NVIDIA A40,8.2496,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,128,256,f16,5,NVIDIA A40,9.08,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,128,287,f16,5,NVIDIA A40,6.4656,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,128,320,f16,5,NVIDIA A40,8.5184,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,128,323,f16,5,NVIDIA A40,7.7552,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,128,362,f16,5,NVIDIA A40,8.3184,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,128,384,f16,5,NVIDIA A40,8.6096,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,128,406,f16,5,NVIDIA A40,8.16,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,128,456,f16,5,NVIDIA A40,8.5088,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,128,512,f16,5,NVIDIA A40,8.4368,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,128,575,f16,5,NVIDIA A40,8.04,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,128,645,f16,5,NVIDIA A40,8.8816,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,128,724,f16,5,NVIDIA A40,6.7024,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,128,768,f16,5,NVIDIA A40,8.4704,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,128,813,f16,5,NVIDIA A40,9.816,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,128,912,f16,5,NVIDIA A40,8.9984,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,128,1024,f16,5,NVIDIA A40,9.3344,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,128,1149,f16,5,NVIDIA A40,10.0896,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,128,1290,f16,5,NVIDIA A40,10.0592,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,128,1448,f16,5,NVIDIA A40,8.896,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,128,1536,f16,5,NVIDIA A40,8.8048,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,128,1625,f16,5,NVIDIA A40,8.184,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,128,1825,f16,5,NVIDIA A40,9.2528,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,128,2048,f16,5,NVIDIA A40,8.5424,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,128,2299,f16,5,NVIDIA A40,8.2,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,128,2580,f16,5,NVIDIA A40,8.1648,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,128,2896,f16,5,NVIDIA A40,8.616,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,128,3072,f16,5,NVIDIA A40,8.5376,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,128,3251,f16,5,NVIDIA A40,8.528,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,128,3649,f16,5,NVIDIA A40,8.888,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,128,4096,f16,5,NVIDIA A40,10.0176,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,128,4598,f16,5,NVIDIA A40,9.7136,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,128,5161,f16,5,NVIDIA A40,8.8608,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,128,5793,f16,5,NVIDIA A40,8.8256,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,128,6502,f16,5,NVIDIA A40,9.208,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_f16_64x64_32x6_nn_align2>(T1::Params)
+16,128,7298,f16,5,NVIDIA A40,9.2816,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_f16_64x64_32x6_nn_align2>(T1::Params)
+16,128,8192,f16,5,NVIDIA A40,8.808,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,128,9195,f16,5,NVIDIA A40,10.1264,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,128,10321,f16,5,NVIDIA A40,15.328,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,128,11585,f16,5,NVIDIA A40,11.5504,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,128,13004,f16,5,NVIDIA A40,10.9856,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_f16_64x64_32x6_nn_align2>(T1::Params)
+16,128,14596,f16,5,NVIDIA A40,11.4304,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_f16_64x64_32x6_nn_align2>(T1::Params)
+16,128,16384,f16,5,NVIDIA A40,11.336,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,147,32,f16,5,NVIDIA A40,5.4752,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_32x1_nn_align8>(T1::Params)
+16,147,33,f16,5,NVIDIA A40,5.5136,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,147,36,f16,5,NVIDIA A40,5.4272,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,147,40,f16,5,NVIDIA A40,5.5776,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,147,45,f16,5,NVIDIA A40,8.6576,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,147,48,f16,5,NVIDIA A40,6.5568,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,147,51,f16,5,NVIDIA A40,5.568,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,147,57,f16,5,NVIDIA A40,5.4192,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,147,64,f16,5,NVIDIA A40,5.6192,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,147,72,f16,5,NVIDIA A40,6.1136,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,147,80,f16,5,NVIDIA A40,5.3296,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,147,81,f16,5,NVIDIA A40,5.64,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,147,91,f16,5,NVIDIA A40,5.4672,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,147,96,f16,5,NVIDIA A40,10.3824,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,147,102,f16,5,NVIDIA A40,5.7424,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,147,112,f16,5,NVIDIA A40,8.4208,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,147,114,f16,5,NVIDIA A40,5.872,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,147,128,f16,5,NVIDIA A40,9.128,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,147,144,f16,5,NVIDIA A40,8.672,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,147,160,f16,5,NVIDIA A40,9.4384,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,147,161,f16,5,NVIDIA A40,5.5616,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,147,181,f16,5,NVIDIA A40,6.648,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,147,192,f16,5,NVIDIA A40,12.7056,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,147,203,f16,5,NVIDIA A40,5.6304,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,147,224,f16,5,NVIDIA A40,8.656,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,147,228,f16,5,NVIDIA A40,10.0976,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,147,256,f16,5,NVIDIA A40,8.6368,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,147,287,f16,5,NVIDIA A40,6.1408,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,147,320,f16,5,NVIDIA A40,8.6352,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,147,323,f16,5,NVIDIA A40,6.1296,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,147,362,f16,5,NVIDIA A40,8.2672,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,147,384,f16,5,NVIDIA A40,8.7776,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,147,406,f16,5,NVIDIA A40,8.1232,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,147,456,f16,5,NVIDIA A40,9.1728,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,147,512,f16,5,NVIDIA A40,8.7456,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,147,575,f16,5,NVIDIA A40,7.9936,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,147,645,f16,5,NVIDIA A40,8.9344,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,147,724,f16,5,NVIDIA A40,6.7792,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,147,768,f16,5,NVIDIA A40,10.6992,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,147,813,f16,5,NVIDIA A40,9.8608,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,147,912,f16,5,NVIDIA A40,8.8096,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,147,1024,f16,5,NVIDIA A40,12.6976,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,147,1149,f16,5,NVIDIA A40,11.3328,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,147,1290,f16,5,NVIDIA A40,8.3264,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,147,1448,f16,5,NVIDIA A40,8.8992,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,147,1536,f16,5,NVIDIA A40,11.368,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,147,1625,f16,5,NVIDIA A40,8.2992,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,147,1825,f16,5,NVIDIA A40,8.7216,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,147,2048,f16,5,NVIDIA A40,8.7024,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,147,2299,f16,5,NVIDIA A40,8.4528,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,147,2580,f16,5,NVIDIA A40,13.5632,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,147,2896,f16,5,NVIDIA A40,8.3568,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,147,3072,f16,5,NVIDIA A40,9.8944,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,147,3251,f16,5,NVIDIA A40,8.4272,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,147,3649,f16,5,NVIDIA A40,10.6096,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,147,4096,f16,5,NVIDIA A40,8.3984,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,147,4598,f16,5,NVIDIA A40,8.7808,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,147,5161,f16,5,NVIDIA A40,9.0608,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,147,5793,f16,5,NVIDIA A40,8.8016,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,147,6502,f16,5,NVIDIA A40,13.904,void cutlass::Kernel2<cutlass_75_tensorop_f16_s1688gemm_f16_64x64_nn_align1>(T1::Params)
+16,147,7298,f16,5,NVIDIA A40,13.904,void cutlass::Kernel2<cutlass_75_tensorop_f16_s1688gemm_f16_64x64_nn_align1>(T1::Params)
+16,147,8192,f16,5,NVIDIA A40,9.088,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,147,9195,f16,5,NVIDIA A40,10.144,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,147,10321,f16,5,NVIDIA A40,11.1504,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,147,11585,f16,5,NVIDIA A40,11.5664,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,147,13004,f16,5,NVIDIA A40,17.3168,void cutlass::Kernel2<cutlass_75_tensorop_f16_s1688gemm_f16_64x64_nn_align1>(T1::Params)
+16,147,14596,f16,5,NVIDIA A40,17.8912,void cutlass::Kernel2<cutlass_75_tensorop_f16_s1688gemm_f16_64x64_nn_align1>(T1::Params)
+16,147,16384,f16,5,NVIDIA A40,11.5152,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,160,32,f16,5,NVIDIA A40,6.856,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_32x1_nn_align8>(T1::Params)
+16,160,33,f16,5,NVIDIA A40,5.5472,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,160,36,f16,5,NVIDIA A40,8.5616,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,160,40,f16,5,NVIDIA A40,6.5056,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,160,45,f16,5,NVIDIA A40,6.7568,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,160,48,f16,5,NVIDIA A40,5.4624,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,160,51,f16,5,NVIDIA A40,5.4768,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,160,57,f16,5,NVIDIA A40,6.3088,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,160,64,f16,5,NVIDIA A40,5.3744,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,160,72,f16,5,NVIDIA A40,5.3728,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,160,80,f16,5,NVIDIA A40,6.2496,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,160,81,f16,5,NVIDIA A40,5.7024,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,160,91,f16,5,NVIDIA A40,6.792,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,160,96,f16,5,NVIDIA A40,8.9264,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,160,102,f16,5,NVIDIA A40,5.4736,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,160,112,f16,5,NVIDIA A40,9.128,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,160,114,f16,5,NVIDIA A40,7.8032,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,160,128,f16,5,NVIDIA A40,8.5104,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,160,144,f16,5,NVIDIA A40,8.64,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,160,160,f16,5,NVIDIA A40,8.7728,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,160,161,f16,5,NVIDIA A40,5.8112,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,160,181,f16,5,NVIDIA A40,6.4736,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,160,192,f16,5,NVIDIA A40,10.2912,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,160,203,f16,5,NVIDIA A40,5.544,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,160,224,f16,5,NVIDIA A40,8.5728,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,160,228,f16,5,NVIDIA A40,6.2128,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x2_nn_align2>(T1::Params)
+16,160,256,f16,5,NVIDIA A40,10.4576,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,160,287,f16,5,NVIDIA A40,6.16,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,160,320,f16,5,NVIDIA A40,8.9808,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,160,323,f16,5,NVIDIA A40,6.0864,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,160,362,f16,5,NVIDIA A40,8.2864,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,160,384,f16,5,NVIDIA A40,10.2624,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,160,406,f16,5,NVIDIA A40,9.7408,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,160,456,f16,5,NVIDIA A40,8.5072,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,160,512,f16,5,NVIDIA A40,8.8208,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,160,575,f16,5,NVIDIA A40,8.0032,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,160,645,f16,5,NVIDIA A40,8.9312,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,160,724,f16,5,NVIDIA A40,6.7648,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,160,768,f16,5,NVIDIA A40,10.6272,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,160,813,f16,5,NVIDIA A40,9.8336,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,160,912,f16,5,NVIDIA A40,8.4752,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,160,1024,f16,5,NVIDIA A40,8.9056,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,160,1149,f16,5,NVIDIA A40,11.3168,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,160,1290,f16,5,NVIDIA A40,8.5712,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,160,1448,f16,5,NVIDIA A40,8.632,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,160,1536,f16,5,NVIDIA A40,9.0128,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,160,1625,f16,5,NVIDIA A40,8.2848,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,160,1825,f16,5,NVIDIA A40,8.6304,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,160,2048,f16,5,NVIDIA A40,8.7152,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,160,2299,f16,5,NVIDIA A40,8.504,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,160,2580,f16,5,NVIDIA A40,8.96,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,160,2896,f16,5,NVIDIA A40,8.8064,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,160,3072,f16,5,NVIDIA A40,8.456,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,160,3251,f16,5,NVIDIA A40,8.4992,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,160,3649,f16,5,NVIDIA A40,8.352,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,160,4096,f16,5,NVIDIA A40,9.0384,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,160,4598,f16,5,NVIDIA A40,9.1968,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,160,5161,f16,5,NVIDIA A40,9.0864,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,160,5793,f16,5,NVIDIA A40,9.8896,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,160,6502,f16,5,NVIDIA A40,13.8544,void cutlass::Kernel2<cutlass_75_tensorop_f16_s1688gemm_f16_64x64_nn_align1>(T1::Params)
+16,160,7298,f16,5,NVIDIA A40,13.7952,void cutlass::Kernel2<cutlass_75_tensorop_f16_s1688gemm_f16_64x64_nn_align1>(T1::Params)
+16,160,8192,f16,5,NVIDIA A40,10.9104,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,160,9195,f16,5,NVIDIA A40,10.1952,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,160,10321,f16,5,NVIDIA A40,11.2064,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,160,11585,f16,5,NVIDIA A40,11.68,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,160,13004,f16,5,NVIDIA A40,17.8,void cutlass::Kernel2<cutlass_75_tensorop_f16_s1688gemm_f16_64x64_nn_align1>(T1::Params)
+16,160,14596,f16,5,NVIDIA A40,17.896,void cutlass::Kernel2<cutlass_75_tensorop_f16_s1688gemm_f16_64x64_nn_align1>(T1::Params)
+16,160,16384,f16,5,NVIDIA A40,11.6176,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,169,32,f16,5,NVIDIA A40,6.1856,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_32x1_nn_align8>(T1::Params)
+16,169,33,f16,5,NVIDIA A40,5.4464,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,169,36,f16,5,NVIDIA A40,5.5408,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,169,40,f16,5,NVIDIA A40,5.4832,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,169,45,f16,5,NVIDIA A40,6.3248,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,169,48,f16,5,NVIDIA A40,5.552,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,169,51,f16,5,NVIDIA A40,5.4448,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,169,57,f16,5,NVIDIA A40,5.4528,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,169,64,f16,5,NVIDIA A40,5.3344,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,169,72,f16,5,NVIDIA A40,6.3536,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,169,80,f16,5,NVIDIA A40,5.4736,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,169,81,f16,5,NVIDIA A40,6.4336,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,169,91,f16,5,NVIDIA A40,8.6688,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,169,96,f16,5,NVIDIA A40,8.7088,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,169,102,f16,5,NVIDIA A40,5.3536,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,169,112,f16,5,NVIDIA A40,8.6112,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,169,114,f16,5,NVIDIA A40,5.4256,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,169,128,f16,5,NVIDIA A40,8.4208,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,169,144,f16,5,NVIDIA A40,8.4192,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,169,160,f16,5,NVIDIA A40,8.6672,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,169,161,f16,5,NVIDIA A40,5.3808,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,169,181,f16,5,NVIDIA A40,7.6656,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,169,192,f16,5,NVIDIA A40,8.4608,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,169,203,f16,5,NVIDIA A40,5.6768,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,169,224,f16,5,NVIDIA A40,9.6912,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,169,228,f16,5,NVIDIA A40,5.8464,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x2_nn_align2>(T1::Params)
+16,169,256,f16,5,NVIDIA A40,15.2912,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,169,287,f16,5,NVIDIA A40,6.072,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,169,320,f16,5,NVIDIA A40,8.4128,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,169,323,f16,5,NVIDIA A40,6.1328,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,169,362,f16,5,NVIDIA A40,8.5728,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,169,384,f16,5,NVIDIA A40,8.7744,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,169,406,f16,5,NVIDIA A40,8.1152,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,169,456,f16,5,NVIDIA A40,8.7456,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,169,512,f16,5,NVIDIA A40,8.5184,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,169,575,f16,5,NVIDIA A40,8.0304,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,169,645,f16,5,NVIDIA A40,8.928,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,169,724,f16,5,NVIDIA A40,6.8672,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,169,768,f16,5,NVIDIA A40,9.3056,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,169,813,f16,5,NVIDIA A40,8.3408,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,169,912,f16,5,NVIDIA A40,8.7328,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,169,1024,f16,5,NVIDIA A40,8.728,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,169,1149,f16,5,NVIDIA A40,9.8864,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,169,1290,f16,5,NVIDIA A40,8.7744,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,169,1448,f16,5,NVIDIA A40,9.856,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,169,1536,f16,5,NVIDIA A40,9.3936,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,169,1625,f16,5,NVIDIA A40,8.2416,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,169,1825,f16,5,NVIDIA A40,7.9936,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,169,2048,f16,5,NVIDIA A40,8.28,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,169,2299,f16,5,NVIDIA A40,8.5872,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,169,2580,f16,5,NVIDIA A40,8.2528,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,169,2896,f16,5,NVIDIA A40,8.6944,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,169,3072,f16,5,NVIDIA A40,8.5008,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,169,3251,f16,5,NVIDIA A40,9.2288,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,169,3649,f16,5,NVIDIA A40,9.5808,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,169,4096,f16,5,NVIDIA A40,9.712,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,169,4598,f16,5,NVIDIA A40,8.7424,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,169,5161,f16,5,NVIDIA A40,9.568,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,169,5793,f16,5,NVIDIA A40,10.8672,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,169,6502,f16,5,NVIDIA A40,13.9024,void cutlass::Kernel2<cutlass_75_tensorop_f16_s1688gemm_f16_64x64_nn_align1>(T1::Params)
+16,169,7298,f16,5,NVIDIA A40,13.9504,void cutlass::Kernel2<cutlass_75_tensorop_f16_s1688gemm_f16_64x64_nn_align1>(T1::Params)
+16,169,8192,f16,5,NVIDIA A40,9.9808,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,169,9195,f16,5,NVIDIA A40,11.9056,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,169,10321,f16,5,NVIDIA A40,13.2992,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,169,11585,f16,5,NVIDIA A40,15.6816,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,169,13004,f16,5,NVIDIA A40,17.28,void cutlass::Kernel2<cutlass_75_tensorop_f16_s1688gemm_f16_64x64_nn_align1>(T1::Params)
+16,169,14596,f16,5,NVIDIA A40,18.1184,void cutlass::Kernel2<cutlass_75_tensorop_f16_s1688gemm_f16_64x64_nn_align1>(T1::Params)
+16,169,16384,f16,5,NVIDIA A40,11.944,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,192,32,f16,5,NVIDIA A40,5.7168,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_32x1_nn_align8>(T1::Params)
+16,192,33,f16,5,NVIDIA A40,8.3808,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,192,36,f16,5,NVIDIA A40,5.5472,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,192,40,f16,5,NVIDIA A40,6.6992,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,192,45,f16,5,NVIDIA A40,5.4592,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,192,48,f16,5,NVIDIA A40,6.5824,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,192,51,f16,5,NVIDIA A40,9.4224,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,192,57,f16,5,NVIDIA A40,5.672,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,192,64,f16,5,NVIDIA A40,6.6848,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,192,72,f16,5,NVIDIA A40,7.2272,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,192,80,f16,5,NVIDIA A40,5.5504,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,192,81,f16,5,NVIDIA A40,6.5328,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,192,91,f16,5,NVIDIA A40,6.32,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,192,96,f16,5,NVIDIA A40,11.4448,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,192,102,f16,5,NVIDIA A40,5.4112,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,192,112,f16,5,NVIDIA A40,8.7376,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,192,114,f16,5,NVIDIA A40,7.2768,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,192,128,f16,5,NVIDIA A40,14.4128,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,192,144,f16,5,NVIDIA A40,8.4592,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,192,160,f16,5,NVIDIA A40,8.5296,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,192,161,f16,5,NVIDIA A40,7.4768,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,192,181,f16,5,NVIDIA A40,5.3104,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,192,192,f16,5,NVIDIA A40,8.4288,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,192,203,f16,5,NVIDIA A40,5.6176,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,192,224,f16,5,NVIDIA A40,8.3616,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,192,228,f16,5,NVIDIA A40,7.7568,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,192,256,f16,5,NVIDIA A40,8.84,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,192,287,f16,5,NVIDIA A40,6.1184,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,192,320,f16,5,NVIDIA A40,8.6208,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,192,323,f16,5,NVIDIA A40,6.2688,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,192,362,f16,5,NVIDIA A40,5.7936,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,192,384,f16,5,NVIDIA A40,10.8688,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,192,406,f16,5,NVIDIA A40,6.5344,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,192,456,f16,5,NVIDIA A40,8.7696,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,192,512,f16,5,NVIDIA A40,8.9376,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,192,575,f16,5,NVIDIA A40,8.04,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,192,645,f16,5,NVIDIA A40,9.0176,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,192,724,f16,5,NVIDIA A40,9.248,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,192,768,f16,5,NVIDIA A40,10.4864,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,192,813,f16,5,NVIDIA A40,8.6192,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,192,912,f16,5,NVIDIA A40,8.8624,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,192,1024,f16,5,NVIDIA A40,11.0064,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,192,1149,f16,5,NVIDIA A40,10.1424,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,192,1290,f16,5,NVIDIA A40,8.208,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,192,1448,f16,5,NVIDIA A40,9.4352,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,192,1536,f16,5,NVIDIA A40,10.848,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,192,1625,f16,5,NVIDIA A40,15.2352,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,192,1825,f16,5,NVIDIA A40,9.7152,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,192,2048,f16,5,NVIDIA A40,8.3152,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,192,2299,f16,5,NVIDIA A40,9.0608,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,192,2580,f16,5,NVIDIA A40,8.3664,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,192,2896,f16,5,NVIDIA A40,11.0208,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,192,3072,f16,5,NVIDIA A40,10.3696,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,192,3251,f16,5,NVIDIA A40,9.4512,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,192,3649,f16,5,NVIDIA A40,9.576,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,192,4096,f16,5,NVIDIA A40,8.5632,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,192,4598,f16,5,NVIDIA A40,9.8432,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,192,5161,f16,5,NVIDIA A40,9.4368,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,192,5793,f16,5,NVIDIA A40,10.8656,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,192,6502,f16,5,NVIDIA A40,9.5808,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,192,7298,f16,5,NVIDIA A40,10.4288,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,192,8192,f16,5,NVIDIA A40,8.88,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,192,9195,f16,5,NVIDIA A40,11.9536,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,192,10321,f16,5,NVIDIA A40,13.5104,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,192,11585,f16,5,NVIDIA A40,15.312,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,192,13004,f16,5,NVIDIA A40,13.3568,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,192,14596,f16,5,NVIDIA A40,15.3984,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,192,16384,f16,5,NVIDIA A40,17.2304,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,194,32,f16,5,NVIDIA A40,6.928,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_32x1_nn_align8>(T1::Params)
+16,194,33,f16,5,NVIDIA A40,5.6592,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,194,36,f16,5,NVIDIA A40,6.6544,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,194,40,f16,5,NVIDIA A40,6.512,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,194,45,f16,5,NVIDIA A40,5.7024,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,194,48,f16,5,NVIDIA A40,7.0784,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,194,51,f16,5,NVIDIA A40,5.9536,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,194,57,f16,5,NVIDIA A40,6.696,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,194,64,f16,5,NVIDIA A40,5.6144,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,194,72,f16,5,NVIDIA A40,6.5536,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,194,80,f16,5,NVIDIA A40,6.4224,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,194,81,f16,5,NVIDIA A40,5.4768,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,194,91,f16,5,NVIDIA A40,5.4464,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,194,96,f16,5,NVIDIA A40,8.5232,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,194,102,f16,5,NVIDIA A40,5.936,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,194,112,f16,5,NVIDIA A40,8.5744,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,194,114,f16,5,NVIDIA A40,6.7888,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,194,128,f16,5,NVIDIA A40,11.3344,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,194,144,f16,5,NVIDIA A40,8.504,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,194,160,f16,5,NVIDIA A40,8.5776,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,194,161,f16,5,NVIDIA A40,7.0368,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,194,181,f16,5,NVIDIA A40,5.7552,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,194,192,f16,5,NVIDIA A40,10.6464,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,194,203,f16,5,NVIDIA A40,5.6784,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,194,224,f16,5,NVIDIA A40,8.8912,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,194,228,f16,5,NVIDIA A40,6.224,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,194,256,f16,5,NVIDIA A40,8.648,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,194,287,f16,5,NVIDIA A40,6.7808,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,194,320,f16,5,NVIDIA A40,8.7168,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,194,323,f16,5,NVIDIA A40,6.448,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,194,362,f16,5,NVIDIA A40,5.864,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,194,384,f16,5,NVIDIA A40,10.4592,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,194,406,f16,5,NVIDIA A40,6.6784,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,194,456,f16,5,NVIDIA A40,10.2944,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,194,512,f16,5,NVIDIA A40,13.7776,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,194,575,f16,5,NVIDIA A40,8.7184,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,194,645,f16,5,NVIDIA A40,9.0144,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,194,724,f16,5,NVIDIA A40,9.8032,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,194,768,f16,5,NVIDIA A40,9.0032,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,194,813,f16,5,NVIDIA A40,8.2032,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,194,912,f16,5,NVIDIA A40,8.992,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,194,1024,f16,5,NVIDIA A40,13.6736,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,194,1149,f16,5,NVIDIA A40,8.3264,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,194,1290,f16,5,NVIDIA A40,8.4528,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,194,1448,f16,5,NVIDIA A40,10.7808,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,194,1536,f16,5,NVIDIA A40,8.5888,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,194,1625,f16,5,NVIDIA A40,9.5984,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,194,1825,f16,5,NVIDIA A40,9.9344,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,194,2048,f16,5,NVIDIA A40,9.9056,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,194,2299,f16,5,NVIDIA A40,9.992,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,194,2580,f16,5,NVIDIA A40,13.8992,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,194,2896,f16,5,NVIDIA A40,8.9216,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,194,3072,f16,5,NVIDIA A40,9.8112,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,194,3251,f16,5,NVIDIA A40,10.0352,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,194,3649,f16,5,NVIDIA A40,9.6016,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,194,4096,f16,5,NVIDIA A40,8.5328,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,194,4598,f16,5,NVIDIA A40,8.576,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,194,5161,f16,5,NVIDIA A40,9.8176,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,194,5793,f16,5,NVIDIA A40,11.0304,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,194,6502,f16,5,NVIDIA A40,9.632,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,194,7298,f16,5,NVIDIA A40,10.448,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,194,8192,f16,5,NVIDIA A40,10.5824,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,194,9195,f16,5,NVIDIA A40,11.9632,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,194,10321,f16,5,NVIDIA A40,13.384,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,194,11585,f16,5,NVIDIA A40,15.7808,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,194,13004,f16,5,NVIDIA A40,13.6368,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,194,14596,f16,5,NVIDIA A40,15.2736,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,194,16384,f16,5,NVIDIA A40,18.5776,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,223,32,f16,5,NVIDIA A40,8.6768,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_32x1_nn_align8>(T1::Params)
+16,223,33,f16,5,NVIDIA A40,6.5648,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,223,36,f16,5,NVIDIA A40,5.5744,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,223,40,f16,5,NVIDIA A40,6.4272,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,223,45,f16,5,NVIDIA A40,5.5248,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,223,48,f16,5,NVIDIA A40,8.736,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,223,51,f16,5,NVIDIA A40,5.5872,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,223,57,f16,5,NVIDIA A40,5.3648,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,223,64,f16,5,NVIDIA A40,5.6032,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,223,72,f16,5,NVIDIA A40,5.6544,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,223,80,f16,5,NVIDIA A40,5.5952,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,223,81,f16,5,NVIDIA A40,5.5072,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,223,91,f16,5,NVIDIA A40,6.9024,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,223,96,f16,5,NVIDIA A40,10.5088,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,223,102,f16,5,NVIDIA A40,5.5904,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,223,112,f16,5,NVIDIA A40,10.688,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,223,114,f16,5,NVIDIA A40,5.768,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,223,128,f16,5,NVIDIA A40,8.6352,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,223,144,f16,5,NVIDIA A40,8.5008,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,223,160,f16,5,NVIDIA A40,8.5408,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,223,161,f16,5,NVIDIA A40,5.3408,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,223,181,f16,5,NVIDIA A40,6.7664,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,223,192,f16,5,NVIDIA A40,9.1952,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,223,203,f16,5,NVIDIA A40,5.968,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,223,224,f16,5,NVIDIA A40,8.664,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,223,228,f16,5,NVIDIA A40,5.52,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,223,256,f16,5,NVIDIA A40,14.472,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,223,287,f16,5,NVIDIA A40,6.9056,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,223,320,f16,5,NVIDIA A40,8.5952,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,223,323,f16,5,NVIDIA A40,6.112,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,223,362,f16,5,NVIDIA A40,10.2704,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,223,384,f16,5,NVIDIA A40,8.48,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,223,406,f16,5,NVIDIA A40,5.6224,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,223,456,f16,5,NVIDIA A40,8.5856,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,223,512,f16,5,NVIDIA A40,8.648,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,223,575,f16,5,NVIDIA A40,8.0896,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,223,645,f16,5,NVIDIA A40,8.4112,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,223,724,f16,5,NVIDIA A40,8.1408,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,223,768,f16,5,NVIDIA A40,9.1728,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,223,813,f16,5,NVIDIA A40,8.3728,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,223,912,f16,5,NVIDIA A40,8.6896,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,223,1024,f16,5,NVIDIA A40,9.2224,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,223,1149,f16,5,NVIDIA A40,8.2288,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,223,1290,f16,5,NVIDIA A40,8.7808,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,223,1448,f16,5,NVIDIA A40,9.5072,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,223,1536,f16,5,NVIDIA A40,9.8,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,223,1625,f16,5,NVIDIA A40,9.5184,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,223,1825,f16,5,NVIDIA A40,8.224,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,223,2048,f16,5,NVIDIA A40,8.408,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,223,2299,f16,5,NVIDIA A40,9.5968,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,223,2580,f16,5,NVIDIA A40,8.256,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,223,2896,f16,5,NVIDIA A40,9.0336,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,223,3072,f16,5,NVIDIA A40,8.5328,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,223,3251,f16,5,NVIDIA A40,9.2256,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,223,3649,f16,5,NVIDIA A40,9.5856,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,223,4096,f16,5,NVIDIA A40,8.5824,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,223,4598,f16,5,NVIDIA A40,9.0592,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,223,5161,f16,5,NVIDIA A40,9.4208,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,223,5793,f16,5,NVIDIA A40,10.8928,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,223,6502,f16,5,NVIDIA A40,9.72,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,223,7298,f16,5,NVIDIA A40,10.4944,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,223,8192,f16,5,NVIDIA A40,11.2336,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,223,9195,f16,5,NVIDIA A40,11.9472,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,223,10321,f16,5,NVIDIA A40,13.7776,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,223,11585,f16,5,NVIDIA A40,15.5104,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,223,13004,f16,5,NVIDIA A40,14.384,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,223,14596,f16,5,NVIDIA A40,18.0928,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,223,16384,f16,5,NVIDIA A40,21.056,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,224,32,f16,5,NVIDIA A40,5.5984,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_32x1_nn_align8>(T1::Params)
+16,224,33,f16,5,NVIDIA A40,6.9584,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,224,36,f16,5,NVIDIA A40,6.0048,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,224,40,f16,5,NVIDIA A40,5.3296,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,224,45,f16,5,NVIDIA A40,5.3968,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,224,48,f16,5,NVIDIA A40,5.5584,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,224,51,f16,5,NVIDIA A40,5.3216,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,224,57,f16,5,NVIDIA A40,5.4608,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,224,64,f16,5,NVIDIA A40,5.5824,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,224,72,f16,5,NVIDIA A40,6.2176,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,224,80,f16,5,NVIDIA A40,5.488,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,224,81,f16,5,NVIDIA A40,5.544,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,224,91,f16,5,NVIDIA A40,5.8784,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,224,96,f16,5,NVIDIA A40,8.6016,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,224,102,f16,5,NVIDIA A40,6.472,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,224,112,f16,5,NVIDIA A40,8.7376,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,224,114,f16,5,NVIDIA A40,9.5168,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,224,128,f16,5,NVIDIA A40,9.3664,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,224,144,f16,5,NVIDIA A40,8.5392,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,224,160,f16,5,NVIDIA A40,8.6064,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,224,161,f16,5,NVIDIA A40,5.704,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,224,181,f16,5,NVIDIA A40,5.8624,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,224,192,f16,5,NVIDIA A40,8.4512,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,224,203,f16,5,NVIDIA A40,5.4176,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,224,224,f16,5,NVIDIA A40,8.848,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,224,228,f16,5,NVIDIA A40,5.984,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,224,256,f16,5,NVIDIA A40,11.0304,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,224,287,f16,5,NVIDIA A40,6.264,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,224,320,f16,5,NVIDIA A40,10.4208,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,224,323,f16,5,NVIDIA A40,6.152,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,224,362,f16,5,NVIDIA A40,5.5872,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,224,384,f16,5,NVIDIA A40,9.0256,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,224,406,f16,5,NVIDIA A40,7.16,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,224,456,f16,5,NVIDIA A40,8.4368,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,224,512,f16,5,NVIDIA A40,8.8192,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,224,575,f16,5,NVIDIA A40,8.1664,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,224,645,f16,5,NVIDIA A40,8.5104,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,224,724,f16,5,NVIDIA A40,13.3728,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,224,768,f16,5,NVIDIA A40,9.792,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,224,813,f16,5,NVIDIA A40,10.6976,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,224,912,f16,5,NVIDIA A40,8.5584,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,224,1024,f16,5,NVIDIA A40,12.4512,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,224,1149,f16,5,NVIDIA A40,13.6416,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,224,1290,f16,5,NVIDIA A40,8.584,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,224,1448,f16,5,NVIDIA A40,9.1232,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,224,1536,f16,5,NVIDIA A40,8.8832,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,224,1625,f16,5,NVIDIA A40,8.272,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,224,1825,f16,5,NVIDIA A40,8.328,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,224,2048,f16,5,NVIDIA A40,8.5808,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,224,2299,f16,5,NVIDIA A40,8.6592,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,224,2580,f16,5,NVIDIA A40,10.0864,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,224,2896,f16,5,NVIDIA A40,10.0768,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,224,3072,f16,5,NVIDIA A40,8.7152,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,224,3251,f16,5,NVIDIA A40,9.2656,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,224,3649,f16,5,NVIDIA A40,9.5888,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,224,4096,f16,5,NVIDIA A40,9.904,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,224,4598,f16,5,NVIDIA A40,8.6736,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,224,5161,f16,5,NVIDIA A40,9.4048,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,224,5793,f16,5,NVIDIA A40,10.9696,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,224,6502,f16,5,NVIDIA A40,9.792,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,224,7298,f16,5,NVIDIA A40,10.5088,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,224,8192,f16,5,NVIDIA A40,10.8752,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,224,9195,f16,5,NVIDIA A40,12.0752,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,224,10321,f16,5,NVIDIA A40,13.7792,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,224,11585,f16,5,NVIDIA A40,15.272,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,224,13004,f16,5,NVIDIA A40,14.4624,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,224,14596,f16,5,NVIDIA A40,18.3776,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,224,16384,f16,5,NVIDIA A40,21.1744,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,256,32,f16,5,NVIDIA A40,5.624,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_32x1_nn_align8>(T1::Params)
+16,256,33,f16,5,NVIDIA A40,5.5264,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,256,36,f16,5,NVIDIA A40,9.256,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,256,40,f16,5,NVIDIA A40,6.816,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,256,45,f16,5,NVIDIA A40,5.4832,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,256,48,f16,5,NVIDIA A40,10.0864,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,256,51,f16,5,NVIDIA A40,6.0,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,256,57,f16,5,NVIDIA A40,5.5792,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,256,64,f16,5,NVIDIA A40,5.3568,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,256,72,f16,5,NVIDIA A40,6.8864,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,256,80,f16,5,NVIDIA A40,5.7632,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,256,81,f16,5,NVIDIA A40,5.5088,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,256,91,f16,5,NVIDIA A40,5.5328,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,256,96,f16,5,NVIDIA A40,8.5808,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,256,102,f16,5,NVIDIA A40,5.7728,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,256,112,f16,5,NVIDIA A40,8.5536,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,256,114,f16,5,NVIDIA A40,5.576,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,256,128,f16,5,NVIDIA A40,8.4032,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,256,144,f16,5,NVIDIA A40,8.6848,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,256,160,f16,5,NVIDIA A40,8.8832,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,256,161,f16,5,NVIDIA A40,5.6208,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,256,181,f16,5,NVIDIA A40,5.4864,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,256,192,f16,5,NVIDIA A40,8.5024,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,256,203,f16,5,NVIDIA A40,5.8896,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,256,224,f16,5,NVIDIA A40,8.7664,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,256,228,f16,5,NVIDIA A40,5.5296,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,256,256,f16,5,NVIDIA A40,8.7008,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,256,287,f16,5,NVIDIA A40,6.1536,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,256,320,f16,5,NVIDIA A40,8.9664,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,256,323,f16,5,NVIDIA A40,6.1264,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,256,362,f16,5,NVIDIA A40,5.9728,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,256,384,f16,5,NVIDIA A40,8.568,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,256,406,f16,5,NVIDIA A40,5.8784,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,256,456,f16,5,NVIDIA A40,8.6528,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,256,512,f16,5,NVIDIA A40,8.9776,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,256,575,f16,5,NVIDIA A40,8.4656,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,256,645,f16,5,NVIDIA A40,8.416,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,256,724,f16,5,NVIDIA A40,8.5488,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,256,768,f16,5,NVIDIA A40,10.3168,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,256,813,f16,5,NVIDIA A40,8.84,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,256,912,f16,5,NVIDIA A40,8.8704,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,256,1024,f16,5,NVIDIA A40,8.9632,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,256,1149,f16,5,NVIDIA A40,9.232,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,256,1290,f16,5,NVIDIA A40,8.3536,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,256,1448,f16,5,NVIDIA A40,8.648,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,256,1536,f16,5,NVIDIA A40,9.3904,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,256,1625,f16,5,NVIDIA A40,8.3616,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,256,1825,f16,5,NVIDIA A40,16.4288,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,256,2048,f16,5,NVIDIA A40,8.2784,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,256,2299,f16,5,NVIDIA A40,10.3408,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,256,2580,f16,5,NVIDIA A40,8.2672,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,256,2896,f16,5,NVIDIA A40,8.2976,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,256,3072,f16,5,NVIDIA A40,8.4256,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,256,3251,f16,5,NVIDIA A40,9.736,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,256,3649,f16,5,NVIDIA A40,9.3792,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,256,4096,f16,5,NVIDIA A40,8.7696,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,256,4598,f16,5,NVIDIA A40,8.9936,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,256,5161,f16,5,NVIDIA A40,10.8624,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,256,5793,f16,5,NVIDIA A40,10.9456,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,256,6502,f16,5,NVIDIA A40,9.9696,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,256,7298,f16,5,NVIDIA A40,10.7792,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,256,8192,f16,5,NVIDIA A40,8.9056,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,256,9195,f16,5,NVIDIA A40,12.3184,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,256,10321,f16,5,NVIDIA A40,13.7872,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,256,11585,f16,5,NVIDIA A40,16.1312,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,256,13004,f16,5,NVIDIA A40,18.2144,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,256,14596,f16,5,NVIDIA A40,21.7408,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,256,16384,f16,5,NVIDIA A40,23.1248,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,294,32,f16,5,NVIDIA A40,5.7568,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_32x1_nn_align8>(T1::Params)
+16,294,33,f16,5,NVIDIA A40,5.3648,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,294,36,f16,5,NVIDIA A40,5.4512,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,294,40,f16,5,NVIDIA A40,5.4928,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,294,45,f16,5,NVIDIA A40,5.5584,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,294,48,f16,5,NVIDIA A40,5.4208,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,294,51,f16,5,NVIDIA A40,5.4464,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,294,57,f16,5,NVIDIA A40,5.608,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,294,64,f16,5,NVIDIA A40,7.0944,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,294,72,f16,5,NVIDIA A40,5.4736,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,294,80,f16,5,NVIDIA A40,5.472,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,294,81,f16,5,NVIDIA A40,5.968,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,294,91,f16,5,NVIDIA A40,6.3056,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,294,96,f16,5,NVIDIA A40,8.4608,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,294,102,f16,5,NVIDIA A40,5.5104,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,294,112,f16,5,NVIDIA A40,15.7632,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,294,114,f16,5,NVIDIA A40,8.1472,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,294,128,f16,5,NVIDIA A40,8.5776,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,294,144,f16,5,NVIDIA A40,8.6336,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,294,160,f16,5,NVIDIA A40,8.7008,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,294,161,f16,5,NVIDIA A40,5.6576,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,294,181,f16,5,NVIDIA A40,5.3584,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,294,192,f16,5,NVIDIA A40,9.1008,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,294,203,f16,5,NVIDIA A40,5.7568,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,294,224,f16,5,NVIDIA A40,10.9888,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,294,228,f16,5,NVIDIA A40,5.6928,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,294,256,f16,5,NVIDIA A40,8.9712,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,294,287,f16,5,NVIDIA A40,6.1168,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,294,320,f16,5,NVIDIA A40,8.592,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,294,323,f16,5,NVIDIA A40,6.6608,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,294,362,f16,5,NVIDIA A40,5.6128,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,294,384,f16,5,NVIDIA A40,8.8176,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,294,406,f16,5,NVIDIA A40,5.5776,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,294,456,f16,5,NVIDIA A40,8.704,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,294,512,f16,5,NVIDIA A40,8.7008,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,294,575,f16,5,NVIDIA A40,8.1456,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,294,645,f16,5,NVIDIA A40,12.5008,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,294,724,f16,5,NVIDIA A40,9.912,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,294,768,f16,5,NVIDIA A40,8.7104,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,294,813,f16,5,NVIDIA A40,8.2864,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,294,912,f16,5,NVIDIA A40,8.776,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,294,1024,f16,5,NVIDIA A40,10.7952,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,294,1149,f16,5,NVIDIA A40,8.5216,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,294,1290,f16,5,NVIDIA A40,8.7024,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,294,1448,f16,5,NVIDIA A40,10.9168,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,294,1536,f16,5,NVIDIA A40,9.2448,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,294,1625,f16,5,NVIDIA A40,9.1344,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,294,1825,f16,5,NVIDIA A40,9.2208,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,294,2048,f16,5,NVIDIA A40,9.4096,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,294,2299,f16,5,NVIDIA A40,9.3776,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,294,2580,f16,5,NVIDIA A40,8.7552,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,294,2896,f16,5,NVIDIA A40,8.3488,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,294,3072,f16,5,NVIDIA A40,8.3168,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,294,3251,f16,5,NVIDIA A40,10.8416,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,294,3649,f16,5,NVIDIA A40,11.144,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,294,4096,f16,5,NVIDIA A40,8.272,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,294,4598,f16,5,NVIDIA A40,9.7328,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,294,5161,f16,5,NVIDIA A40,14.0,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,294,5793,f16,5,NVIDIA A40,14.1936,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,294,6502,f16,5,NVIDIA A40,11.5792,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,294,7298,f16,5,NVIDIA A40,12.0624,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,294,8192,f16,5,NVIDIA A40,9.1104,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,294,9195,f16,5,NVIDIA A40,14.1568,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,294,10321,f16,5,NVIDIA A40,19.5712,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,294,11585,f16,5,NVIDIA A40,22.1488,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,294,13004,f16,5,NVIDIA A40,23.7488,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,294,14596,f16,5,NVIDIA A40,26.056,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,294,16384,f16,5,NVIDIA A40,25.6048,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,320,32,f16,5,NVIDIA A40,6.0128,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_32x1_nn_align8>(T1::Params)
+16,320,33,f16,5,NVIDIA A40,5.8288,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,320,36,f16,5,NVIDIA A40,5.4176,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,320,40,f16,5,NVIDIA A40,5.4912,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,320,45,f16,5,NVIDIA A40,5.4944,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,320,48,f16,5,NVIDIA A40,5.5936,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,320,51,f16,5,NVIDIA A40,5.5312,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,320,57,f16,5,NVIDIA A40,7.0464,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,320,64,f16,5,NVIDIA A40,6.152,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,320,72,f16,5,NVIDIA A40,5.776,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,320,80,f16,5,NVIDIA A40,5.624,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,320,81,f16,5,NVIDIA A40,5.3568,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,320,91,f16,5,NVIDIA A40,5.4624,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,320,96,f16,5,NVIDIA A40,9.6912,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,320,102,f16,5,NVIDIA A40,5.6384,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,320,112,f16,5,NVIDIA A40,8.5968,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,320,114,f16,5,NVIDIA A40,5.5376,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,320,128,f16,5,NVIDIA A40,8.336,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,320,144,f16,5,NVIDIA A40,10.896,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,320,160,f16,5,NVIDIA A40,8.7696,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,320,161,f16,5,NVIDIA A40,5.4864,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,320,181,f16,5,NVIDIA A40,5.5408,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,320,192,f16,5,NVIDIA A40,8.3616,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,320,203,f16,5,NVIDIA A40,5.5888,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,320,224,f16,5,NVIDIA A40,10.4224,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,320,228,f16,5,NVIDIA A40,5.6176,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,320,256,f16,5,NVIDIA A40,8.8032,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,320,287,f16,5,NVIDIA A40,6.1392,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,320,320,f16,5,NVIDIA A40,8.4688,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,320,323,f16,5,NVIDIA A40,6.128,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,320,362,f16,5,NVIDIA A40,6.0576,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,320,384,f16,5,NVIDIA A40,8.4416,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,320,406,f16,5,NVIDIA A40,7.0448,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,320,456,f16,5,NVIDIA A40,8.744,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,320,512,f16,5,NVIDIA A40,8.5632,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,320,575,f16,5,NVIDIA A40,8.336,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,320,645,f16,5,NVIDIA A40,8.4464,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,320,724,f16,5,NVIDIA A40,8.3584,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,320,768,f16,5,NVIDIA A40,9.216,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,320,813,f16,5,NVIDIA A40,8.3216,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,320,912,f16,5,NVIDIA A40,8.5408,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,320,1024,f16,5,NVIDIA A40,8.624,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,320,1149,f16,5,NVIDIA A40,8.3584,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,320,1290,f16,5,NVIDIA A40,8.3824,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,320,1448,f16,5,NVIDIA A40,11.064,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,320,1536,f16,5,NVIDIA A40,9.3376,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,320,1625,f16,5,NVIDIA A40,10.4784,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,320,1825,f16,5,NVIDIA A40,9.2624,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,320,2048,f16,5,NVIDIA A40,8.2912,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,320,2299,f16,5,NVIDIA A40,9.3744,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,320,2580,f16,5,NVIDIA A40,8.672,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,320,2896,f16,5,NVIDIA A40,9.0752,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,320,3072,f16,5,NVIDIA A40,8.224,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,320,3251,f16,5,NVIDIA A40,10.8944,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,320,3649,f16,5,NVIDIA A40,11.2032,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,320,4096,f16,5,NVIDIA A40,8.4784,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,320,4598,f16,5,NVIDIA A40,9.8224,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,320,5161,f16,5,NVIDIA A40,14.056,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,320,5793,f16,5,NVIDIA A40,14.36,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,320,6502,f16,5,NVIDIA A40,11.5616,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,320,7298,f16,5,NVIDIA A40,12.0256,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,320,8192,f16,5,NVIDIA A40,9.2016,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,320,9195,f16,5,NVIDIA A40,16.7168,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,320,10321,f16,5,NVIDIA A40,21.9936,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,320,11585,f16,5,NVIDIA A40,24.3888,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,320,13004,f16,5,NVIDIA A40,25.3296,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,320,14596,f16,5,NVIDIA A40,27.3536,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,320,16384,f16,5,NVIDIA A40,27.1776,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,338,32,f16,5,NVIDIA A40,5.6784,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_32x1_nn_align8>(T1::Params)
+16,338,33,f16,5,NVIDIA A40,5.5088,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,338,36,f16,5,NVIDIA A40,6.6672,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,338,40,f16,5,NVIDIA A40,5.4976,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,338,45,f16,5,NVIDIA A40,5.6304,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,338,48,f16,5,NVIDIA A40,5.3568,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,338,51,f16,5,NVIDIA A40,5.5776,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,338,57,f16,5,NVIDIA A40,5.5056,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,338,64,f16,5,NVIDIA A40,5.7392,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,338,72,f16,5,NVIDIA A40,5.5088,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,338,80,f16,5,NVIDIA A40,5.5104,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,338,81,f16,5,NVIDIA A40,5.7088,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,338,91,f16,5,NVIDIA A40,6.6384,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,338,96,f16,5,NVIDIA A40,8.8064,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,338,102,f16,5,NVIDIA A40,5.7664,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,338,112,f16,5,NVIDIA A40,10.7328,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,338,114,f16,5,NVIDIA A40,5.5744,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,338,128,f16,5,NVIDIA A40,8.8176,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,338,144,f16,5,NVIDIA A40,10.488,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,338,160,f16,5,NVIDIA A40,8.6416,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,338,161,f16,5,NVIDIA A40,5.7728,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,338,181,f16,5,NVIDIA A40,5.5888,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,338,192,f16,5,NVIDIA A40,8.3248,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,338,203,f16,5,NVIDIA A40,5.5392,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,338,224,f16,5,NVIDIA A40,11.0304,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,338,228,f16,5,NVIDIA A40,5.656,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,338,256,f16,5,NVIDIA A40,9.016,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,338,287,f16,5,NVIDIA A40,6.1216,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,338,320,f16,5,NVIDIA A40,8.7232,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,338,323,f16,5,NVIDIA A40,9.2976,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,338,362,f16,5,NVIDIA A40,6.1856,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,338,384,f16,5,NVIDIA A40,8.6576,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,338,406,f16,5,NVIDIA A40,5.96,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,338,456,f16,5,NVIDIA A40,13.8896,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,338,512,f16,5,NVIDIA A40,8.4992,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,338,575,f16,5,NVIDIA A40,9.7632,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_16x16_64x1_nn_align1>(T1::Params)
+16,338,645,f16,5,NVIDIA A40,8.768,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_16x16_64x1_nn_align1>(T1::Params)
+16,338,724,f16,5,NVIDIA A40,8.6544,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,338,768,f16,5,NVIDIA A40,8.7792,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,338,813,f16,5,NVIDIA A40,8.336,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_16x16_64x1_nn_align1>(T1::Params)
+16,338,912,f16,5,NVIDIA A40,8.6032,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,338,1024,f16,5,NVIDIA A40,9.7152,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,338,1149,f16,5,NVIDIA A40,8.344,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,338,1290,f16,5,NVIDIA A40,10.1968,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align2>(T1::Params)
+16,338,1448,f16,5,NVIDIA A40,8.9264,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,338,1536,f16,5,NVIDIA A40,8.7808,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,338,1625,f16,5,NVIDIA A40,9.168,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,338,1825,f16,5,NVIDIA A40,9.24,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,338,2048,f16,5,NVIDIA A40,8.9856,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,338,2299,f16,5,NVIDIA A40,9.3744,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,338,2580,f16,5,NVIDIA A40,11.6416,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,338,2896,f16,5,NVIDIA A40,10.1072,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,338,3072,f16,5,NVIDIA A40,8.6464,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,338,3251,f16,5,NVIDIA A40,10.928,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,338,3649,f16,5,NVIDIA A40,11.2448,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,338,4096,f16,5,NVIDIA A40,9.176,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,338,4598,f16,5,NVIDIA A40,11.9056,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,338,5161,f16,5,NVIDIA A40,14.0256,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,338,5793,f16,5,NVIDIA A40,14.24,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,338,6502,f16,5,NVIDIA A40,11.6976,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,338,7298,f16,5,NVIDIA A40,12.248,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,338,8192,f16,5,NVIDIA A40,11.1952,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,338,9195,f16,5,NVIDIA A40,20.0848,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,338,10321,f16,5,NVIDIA A40,24.7216,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,338,11585,f16,5,NVIDIA A40,25.3856,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,338,13004,f16,5,NVIDIA A40,25.5936,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,338,14596,f16,5,NVIDIA A40,27.7472,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,338,16384,f16,5,NVIDIA A40,28.008,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,384,32,f16,5,NVIDIA A40,6.6896,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_32x1_nn_align8>(T1::Params)
+16,384,33,f16,5,NVIDIA A40,6.0112,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,384,36,f16,5,NVIDIA A40,6.296,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,384,40,f16,5,NVIDIA A40,6.5824,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,384,45,f16,5,NVIDIA A40,7.4576,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,384,48,f16,5,NVIDIA A40,6.5552,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,384,51,f16,5,NVIDIA A40,6.5648,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,384,57,f16,5,NVIDIA A40,5.9184,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,384,64,f16,5,NVIDIA A40,5.448,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,384,72,f16,5,NVIDIA A40,6.5296,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,384,80,f16,5,NVIDIA A40,6.432,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,384,81,f16,5,NVIDIA A40,5.3936,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,384,91,f16,5,NVIDIA A40,5.5088,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,384,96,f16,5,NVIDIA A40,8.4784,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,384,102,f16,5,NVIDIA A40,5.5168,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,384,112,f16,5,NVIDIA A40,8.688,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,384,114,f16,5,NVIDIA A40,6.6992,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,384,128,f16,5,NVIDIA A40,10.4128,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,384,144,f16,5,NVIDIA A40,8.7104,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,384,160,f16,5,NVIDIA A40,13.8704,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,384,161,f16,5,NVIDIA A40,9.7216,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,384,181,f16,5,NVIDIA A40,5.4704,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,384,192,f16,5,NVIDIA A40,10.6928,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,384,203,f16,5,NVIDIA A40,5.6336,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,384,224,f16,5,NVIDIA A40,9.0848,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,384,228,f16,5,NVIDIA A40,5.7184,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,384,256,f16,5,NVIDIA A40,8.8416,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,384,287,f16,5,NVIDIA A40,7.0272,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,384,320,f16,5,NVIDIA A40,8.7648,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,384,323,f16,5,NVIDIA A40,7.2528,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,384,362,f16,5,NVIDIA A40,5.7696,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,384,384,f16,5,NVIDIA A40,10.5648,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,384,406,f16,5,NVIDIA A40,6.464,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,384,456,f16,5,NVIDIA A40,8.568,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,384,512,f16,5,NVIDIA A40,10.5568,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,384,575,f16,5,NVIDIA A40,8.328,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_16x16_64x1_nn_align1>(T1::Params)
+16,384,645,f16,5,NVIDIA A40,8.5184,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,384,724,f16,5,NVIDIA A40,13.5648,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,384,768,f16,5,NVIDIA A40,10.6016,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,384,813,f16,5,NVIDIA A40,8.2256,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,384,912,f16,5,NVIDIA A40,10.9776,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,384,1024,f16,5,NVIDIA A40,8.7632,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,384,1149,f16,5,NVIDIA A40,12.4528,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,384,1290,f16,5,NVIDIA A40,9.9616,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align2>(T1::Params)
+16,384,1448,f16,5,NVIDIA A40,10.8208,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,384,1536,f16,5,NVIDIA A40,8.6496,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,384,1625,f16,5,NVIDIA A40,10.4432,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,384,1825,f16,5,NVIDIA A40,9.2464,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,384,2048,f16,5,NVIDIA A40,10.5392,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,384,2299,f16,5,NVIDIA A40,9.4048,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,384,2580,f16,5,NVIDIA A40,9.5232,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,384,2896,f16,5,NVIDIA A40,9.3072,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,384,3072,f16,5,NVIDIA A40,9.1104,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,384,3251,f16,5,NVIDIA A40,10.9312,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,384,3649,f16,5,NVIDIA A40,11.5216,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,384,4096,f16,5,NVIDIA A40,9.1376,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,384,4598,f16,5,NVIDIA A40,10.192,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,384,5161,f16,5,NVIDIA A40,14.0256,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,384,5793,f16,5,NVIDIA A40,14.3264,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,384,6502,f16,5,NVIDIA A40,14.1728,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,384,7298,f16,5,NVIDIA A40,12.4208,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,384,8192,f16,5,NVIDIA A40,14.272,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,384,9195,f16,5,NVIDIA A40,23.6928,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,384,10321,f16,5,NVIDIA A40,25.9664,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,384,11585,f16,5,NVIDIA A40,28.2,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,384,13004,f16,5,NVIDIA A40,27.1856,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,384,14596,f16,5,NVIDIA A40,29.352,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,384,16384,f16,5,NVIDIA A40,30.4528,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,388,32,f16,5,NVIDIA A40,5.5696,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_32x1_nn_align8>(T1::Params)
+16,388,33,f16,5,NVIDIA A40,6.3568,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,388,36,f16,5,NVIDIA A40,5.5424,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,388,40,f16,5,NVIDIA A40,5.3664,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,388,45,f16,5,NVIDIA A40,6.3456,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,388,48,f16,5,NVIDIA A40,5.4352,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,388,51,f16,5,NVIDIA A40,5.9264,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,388,57,f16,5,NVIDIA A40,5.4576,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,388,64,f16,5,NVIDIA A40,6.5184,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,388,72,f16,5,NVIDIA A40,5.2752,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,388,80,f16,5,NVIDIA A40,5.6336,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,388,81,f16,5,NVIDIA A40,5.6352,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,388,91,f16,5,NVIDIA A40,5.5104,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,388,96,f16,5,NVIDIA A40,8.792,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,388,102,f16,5,NVIDIA A40,7.0208,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,388,112,f16,5,NVIDIA A40,8.5808,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,388,114,f16,5,NVIDIA A40,5.5968,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,388,128,f16,5,NVIDIA A40,9.1776,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,388,144,f16,5,NVIDIA A40,8.5248,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,388,160,f16,5,NVIDIA A40,8.8672,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,388,161,f16,5,NVIDIA A40,5.9584,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,388,181,f16,5,NVIDIA A40,5.672,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,388,192,f16,5,NVIDIA A40,8.6464,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,388,203,f16,5,NVIDIA A40,5.544,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,388,224,f16,5,NVIDIA A40,8.4128,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,388,228,f16,5,NVIDIA A40,5.6496,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,388,256,f16,5,NVIDIA A40,8.8272,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,388,287,f16,5,NVIDIA A40,6.1296,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,388,320,f16,5,NVIDIA A40,8.8352,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,388,323,f16,5,NVIDIA A40,6.3152,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,388,362,f16,5,NVIDIA A40,6.16,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,388,384,f16,5,NVIDIA A40,8.7296,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,388,406,f16,5,NVIDIA A40,6.0208,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,388,456,f16,5,NVIDIA A40,9.4528,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,388,512,f16,5,NVIDIA A40,8.8752,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,388,575,f16,5,NVIDIA A40,8.6016,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_16x16_64x1_nn_align1>(T1::Params)
+16,388,645,f16,5,NVIDIA A40,8.5664,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,388,724,f16,5,NVIDIA A40,8.344,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,388,768,f16,5,NVIDIA A40,9.208,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,388,813,f16,5,NVIDIA A40,8.808,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_16x16_64x1_nn_align1>(T1::Params)
+16,388,912,f16,5,NVIDIA A40,8.7856,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,388,1024,f16,5,NVIDIA A40,8.6656,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,388,1149,f16,5,NVIDIA A40,8.6368,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,388,1290,f16,5,NVIDIA A40,8.3056,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align2>(T1::Params)
+16,388,1448,f16,5,NVIDIA A40,11.0832,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,388,1536,f16,5,NVIDIA A40,8.9296,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,388,1625,f16,5,NVIDIA A40,9.2208,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,388,1825,f16,5,NVIDIA A40,9.328,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,388,2048,f16,5,NVIDIA A40,9.672,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,388,2299,f16,5,NVIDIA A40,9.4336,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,388,2580,f16,5,NVIDIA A40,9.4576,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,388,2896,f16,5,NVIDIA A40,9.2832,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,388,3072,f16,5,NVIDIA A40,10.6576,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,388,3251,f16,5,NVIDIA A40,10.9424,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,388,3649,f16,5,NVIDIA A40,11.2144,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,388,4096,f16,5,NVIDIA A40,9.1536,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,388,4598,f16,5,NVIDIA A40,12.4688,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,388,5161,f16,5,NVIDIA A40,14.0416,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,388,5793,f16,5,NVIDIA A40,14.2592,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,388,6502,f16,5,NVIDIA A40,11.9472,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,388,7298,f16,5,NVIDIA A40,12.6944,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,388,8192,f16,5,NVIDIA A40,16.92,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,388,9195,f16,5,NVIDIA A40,23.1952,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,388,10321,f16,5,NVIDIA A40,26.392,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_64x2_nn_align1>(T1::Params)
+16,388,11585,f16,5,NVIDIA A40,33.1632,void cutlass::Kernel2<cutlass_75_wmma_tensorop_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,388,13004,f16,5,NVIDIA A40,26.832,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,388,14596,f16,5,NVIDIA A40,29.2784,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,388,16384,f16,5,NVIDIA A40,30.6864,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_nn_align8>(T1::Params)
+16,446,32,f16,5,NVIDIA A40,5.6384,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align8>(T1::Params)
+16,446,33,f16,5,NVIDIA A40,5.416,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,446,36,f16,5,NVIDIA A40,5.5952,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,446,40,f16,5,NVIDIA A40,5.7328,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,446,45,f16,5,NVIDIA A40,5.496,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,446,48,f16,5,NVIDIA A40,5.9344,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,446,51,f16,5,NVIDIA A40,5.3536,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,446,57,f16,5,NVIDIA A40,9.8032,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,446,64,f16,5,NVIDIA A40,5.4544,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,446,72,f16,5,NVIDIA A40,5.8976,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,446,80,f16,5,NVIDIA A40,5.5664,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align8>(T1::Params)
+16,446,81,f16,5,NVIDIA A40,5.624,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,446,91,f16,5,NVIDIA A40,5.5968,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align1>(T1::Params)
+16,446,96,f16,5,NVIDIA A40,9.5584,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,446,102,f16,5,NVIDIA A40,5.3856,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,446,112,f16,5,NVIDIA A40,8.304,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,446,114,f16,5,NVIDIA A40,7.3328,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align2>(T1::Params)
+16,446,128,f16,5,NVIDIA A40,8.5456,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,446,144,f16,5,NVIDIA A40,8.9472,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,446,160,f16,5,NVIDIA A40,8.3792,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,446,161,f16,5,NVIDIA A40,5.7168,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,446,181,f16,5,NVIDIA A40,5.6048,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,446,192,f16,5,NVIDIA A40,8.6416,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,446,203,f16,5,NVIDIA A40,6.7488,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,446,224,f16,5,NVIDIA A40,8.5632,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,446,228,f16,5,NVIDIA A40,5.5024,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align2>(T1::Params)
+16,446,256,f16,5,NVIDIA A40,8.6064,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,446,287,f16,5,NVIDIA A40,6.1328,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,446,320,f16,5,NVIDIA A40,9.3632,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,446,323,f16,5,NVIDIA A40,6.1344,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,446,362,f16,5,NVIDIA A40,9.8208,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,446,384,f16,5,NVIDIA A40,8.5664,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,446,406,f16,5,NVIDIA A40,5.9888,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,446,456,f16,5,NVIDIA A40,10.3344,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,446,512,f16,5,NVIDIA A40,5.4896,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_128x2_nn_align8>(T1::Params)
+16,446,575,f16,5,NVIDIA A40,8.2576,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,446,645,f16,5,NVIDIA A40,8.7472,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,446,724,f16,5,NVIDIA A40,10.4608,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,446,768,f16,5,NVIDIA A40,9.0864,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,446,813,f16,5,NVIDIA A40,8.4432,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align1>(T1::Params)
+16,446,912,f16,5,NVIDIA A40,8.9952,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,446,1024,f16,5,NVIDIA A40,8.84,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,446,1149,f16,5,NVIDIA A40,8.2944,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_64x1_nn_align1>(T1::Params)
+16,446,1290,f16,5,NVIDIA A40,8.5776,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_nn_align2>(T1::Params)
+16,446,1448,f16,5,NVIDIA A40,9.2176,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,446,1536,f16,5,NVIDIA A40,8.7488,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,446,1625,f16,5,NVIDIA A40,9.2448,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,446,1825,f16,5,NVIDIA A40,10.0304,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,446,2048,f16,5,NVIDIA A40,9.1696,sm80_xmma_gemm_f16f16_f16f32_f32_nn_n_tilesize32x32x64_stage6_warpsize2x2x1_tensor16x8x16_execute_kernel__5x_cublas
+16,446,2299,f16,5,NVIDIA A40,9.4912,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)
+16,446,2580,f16,5,NVIDIA A40,10.0864,void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x1_nn_align2>(T1::Params)
+16,446,2896,f16,5,NVIDIA A40,8.5616,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x10_nn_align8>(T1::Params)
+16,446,3072,f16,5,NVIDIA A40,9.7904,void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x10_nn_align8>(T1::Params)
+16,446,3251,f16,5,NVIDIA A40,11.0112,void cutlass::Kernel2<cutlass_75_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_nn_align1>(T1::Params)

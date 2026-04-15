@@ -30,6 +30,7 @@ class TrainResult:
     loss_name: str
     dropout: float
     use_batch_norm: bool
+    launch_overhead_us: float
 
 
 def _split_frame(frame: pd.DataFrame, train_ratio: float = 0.8) -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -101,6 +102,7 @@ def train_from_frame(
     target_kind: str = "efficiency",
     dropout: float = 0.1,
     use_batch_norm: bool = True,
+    launch_overhead_us: float = 0.0,
 ) -> TrainResult:
     feature_columns = [column for column in frame.columns if column.startswith("f_")]
     if not feature_columns:
@@ -171,8 +173,18 @@ def train_from_frame(
     with torch.no_grad():
         best_train_pred = model(x_train)
         best_val_pred = model(x_val)
-    train_latency_pred = reconstruct_latencies(best_train_pred, train_theoretical_cycles, train_clock_mhz)
-    val_latency_pred = reconstruct_latencies(best_val_pred, val_theoretical_cycles, val_clock_mhz)
+    train_latency_pred = reconstruct_latencies(
+        best_train_pred,
+        train_theoretical_cycles,
+        train_clock_mhz,
+        launch_overhead_us=launch_overhead_us,
+    )
+    val_latency_pred = reconstruct_latencies(
+        best_val_pred,
+        val_theoretical_cycles,
+        val_clock_mhz,
+        launch_overhead_us=launch_overhead_us,
+    )
 
     train_metrics = _regression_metrics(train_latency_pred, y_train_latency)
     val_metrics = _regression_metrics(val_latency_pred, y_val_latency)
@@ -193,4 +205,5 @@ def train_from_frame(
         loss_name=loss_name,
         dropout=dropout,
         use_batch_norm=use_batch_norm,
+        launch_overhead_us=launch_overhead_us,
     )

@@ -50,6 +50,7 @@ def main() -> None:
         feature_std = payload.get("feature_std")
         target_kind = payload.get("target_kind", "latency")
         theoretical_cycle_feature = payload.get("theoretical_cycle_feature", "f_33")
+        launch_overhead_us = payload.get("launch_overhead_us", 0.0)
     else:
         use_batch_norm = any("running_mean" in key for key in payload)
         dropout = 0.1 if use_batch_norm else 0.0
@@ -63,6 +64,7 @@ def main() -> None:
         feature_std = None
         target_kind = "latency"
         theoretical_cycle_feature = "f_33"
+        launch_overhead_us = 0.0
     metrics = evaluate_frame(
         model,
         frame,
@@ -70,6 +72,7 @@ def main() -> None:
         feature_std=feature_std,
         target_kind=target_kind,
         theoretical_cycle_feature=theoretical_cycle_feature,
+        launch_overhead_us=launch_overhead_us,
     )
     for key, value in metrics.items():
         print(f"{key}={value:.6f}")
