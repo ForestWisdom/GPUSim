@@ -3,6 +3,7 @@ import torch
 
 from perf_model.features.feature_vector import FEATURE_VECTOR_FIELDS
 from perf_model.model.mlp import LatencyMLP
+from perf_model.model.predict import reconstruct_latencies
 from perf_model.pipelines.eval_pipeline import evaluate_frame
 from perf_model.pipelines.train_pipeline import train_from_frame
 
@@ -15,7 +16,7 @@ def test_train_from_frame_returns_normalization_metadata() -> None:
     frame["f_5"] = [1000.0] * 4
     frame["f_33"] = [5000.0, 6000.0, 7000.0, 8000.0]
 
-    result = train_from_frame(frame, hidden_sizes=[8], epochs=3, patience=2)
+    result = train_from_frame(frame, hidden_sizes=[8], epochs=3, patience=2, launch_overhead_us=2.5)
 
     assert result.feature_columns[0] == "f_0"
     assert result.feature_columns[-1] == f"f_{feature_count - 1}"
@@ -32,6 +33,7 @@ def test_train_from_frame_returns_normalization_metadata() -> None:
     assert result.loss_name == "mape"
     assert result.dropout == 0.1
     assert result.use_batch_norm is True
+    assert result.launch_overhead_us == 2.5
 
 
 def test_evaluate_frame_reconstructs_latency_from_efficiency_prediction() -> None:
@@ -57,10 +59,22 @@ def test_evaluate_frame_reconstructs_latency_from_efficiency_prediction() -> Non
         feature_std=std,
         target_kind="efficiency",
         theoretical_cycle_feature="f_33",
+        launch_overhead_us=0.0,
     )
 
     assert metrics["rmse"] == 0.0
     assert metrics["mape"] == 0.0
+
+
+def test_reconstruct_latencies_adds_launch_overhead() -> None:
+    predictions = reconstruct_latencies(
+        torch.tensor([0.5], dtype=torch.float32),
+        torch.tensor([5000.0], dtype=torch.float32),
+        torch.tensor([1000.0], dtype=torch.float32),
+        launch_overhead_us=3.0,
+    )
+
+    assert torch.allclose(predictions, torch.tensor([13.0], dtype=torch.float32))
 
 
 def test_checkpoint_payload_round_trip_reconstructs_model_inputs() -> None:
@@ -80,6 +94,7 @@ def test_checkpoint_payload_round_trip_reconstructs_model_inputs() -> None:
         "loss_name": "mape",
         "dropout": 0.1,
         "use_batch_norm": True,
+        "launch_overhead_us": 3.0,
     }
 
     restored = LatencyMLP(
@@ -99,3 +114,4 @@ def test_checkpoint_payload_round_trip_reconstructs_model_inputs() -> None:
     assert payload["loss_name"] == "mape"
     assert payload["dropout"] == 0.1
     assert payload["use_batch_norm"] is True
+    assert payload["launch_overhead_us"] == 3.0

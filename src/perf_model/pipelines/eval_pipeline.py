@@ -19,6 +19,7 @@ def evaluate_frame(
     *,
     target_kind: str = "latency",
     theoretical_cycle_feature: str = "f_33",
+    launch_overhead_us: float = 0.0,
 ) -> dict[str, float]:
     feature_columns = [column for column in frame.columns if column.startswith("f_")]
     features = torch.tensor(frame[feature_columns].to_numpy(), dtype=torch.float32)
@@ -37,6 +38,7 @@ def evaluate_frame(
         theoretical_cycles=theoretical_cycles,
         clock_mhz=clock_mhz,
         target_kind=target_kind,
+        launch_overhead_us=launch_overhead_us,
     ).cpu().numpy()
     targets = frame["latency_us"].to_numpy(dtype=np.float32)
     return {

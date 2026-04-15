@@ -1,0 +1,7 @@
+{
+  "completed_batches": 128,
+  "completed_rows": 1024,
+  "device": 5,
+  "next_case_index": 1024,
+  "profile_name": "cublas_device5_a40_wide_v1_1024"
+}

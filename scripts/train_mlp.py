@@ -25,6 +25,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--lr", type=float, default=1e-3)
     parser.add_argument("--loss", default="mape")
     parser.add_argument("--dropout", type=float, default=0.1)
+    parser.add_argument("--launch-overhead-us", type=float, default=0.0)
     parser.add_argument("--checkpoint", required=True, help="Output checkpoint path")
     return parser.parse_args()
 
@@ -38,6 +39,7 @@ def main() -> None:
         lr=args.lr,
         loss_name=args.loss,
         dropout=args.dropout,
+        launch_overhead_us=args.launch_overhead_us,
     )
     checkpoint = {
         "model_state_dict": result.model.state_dict(),
@@ -54,6 +56,7 @@ def main() -> None:
         "loss_name": result.loss_name,
         "dropout": result.dropout,
         "use_batch_norm": result.use_batch_norm,
+        "launch_overhead_us": result.launch_overhead_us,
     }
     torch.save(checkpoint, args.checkpoint)
     print(f"final_train_loss={result.final_train_loss:.6f}")
