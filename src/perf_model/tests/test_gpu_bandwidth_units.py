@@ -74,7 +74,7 @@ def test_tensor_core_feature_builder_uses_bytes_per_cycle_bandwidth() -> None:
 
     features = TensorCoreFeatureBuilder().build_task_features(task, 0, gpu, kernel)
 
-    assert features.bytes_global == 704.0
-    assert features.global_cycles == 44.0
-    assert features.l2_cycles == 22.0
+    assert features.bytes_global == 448.0
+    assert features.global_cycles == 28.0
+    assert features.l2_cycles == 14.0
     assert features.smem_cycles == 3.0

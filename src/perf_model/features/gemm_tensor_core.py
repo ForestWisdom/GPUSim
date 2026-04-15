@@ -34,9 +34,8 @@ class TensorCoreFeatureBuilder(FeatureBuilder):
         bytes_b = float(task.k_eff * task.n_eff * dtype_bytes)
         bytes_c = float(task.m_eff * task.n_eff * dtype_bytes)
 
-        # A very simple forward GEMM approximation:
-        # read A/B, read+write C/D once
-        bytes_global = bytes_a + bytes_b + 2.0 * bytes_c
+        # Forward GEMM with beta=0: read A/B once, write C/D once.
+        bytes_global = bytes_a + bytes_b + bytes_c
 
         global_cycles = _safe_div(bytes_global, gpu.dram_bw_bytes_per_cycle)
         l2_cycles = _safe_div(bytes_global, gpu.l2_bw_bytes_per_cycle)

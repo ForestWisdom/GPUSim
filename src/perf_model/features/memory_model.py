@@ -44,7 +44,7 @@ def estimate_same_sm_memory_reuse(task_features: list[TaskFeatures]) -> dict[str
 
     unique_bytes_a = sum(unique_a_panels.values())
     unique_bytes_b = sum(unique_b_panels.values())
-    total_bytes_global_effective = unique_bytes_a + unique_bytes_b + 2.0 * total_bytes_c
+    total_bytes_global_effective = unique_bytes_a + unique_bytes_b + total_bytes_c
 
     return {
         "total_bytes_global_raw": total_bytes_global_raw,

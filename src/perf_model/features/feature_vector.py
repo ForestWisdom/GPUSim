@@ -1,6 +1,8 @@
 """Helpers to assemble flat model features."""
 from __future__ import annotations
 
+import math
+
 from perf_model.common.types import GemmProblem, GpuSpec, KernelMeta, SmFeatures
 
 
@@ -43,6 +45,7 @@ FEATURE_VECTOR_FIELDS = [
     "instruction_k",
     "kernel_split_k_default",
     "kernel_swizzle_id",
+    "kernel_stages",
     # Aggregated analytical features
     "gpu_total_tensor_ops",
     "gpu_total_tensor_cycles",
@@ -63,11 +66,16 @@ FEATURE_VECTOR_FIELDS = [
     "gpu_total_bytes_global_raw",
     "avg_reuse_a_factor",
     "avg_reuse_b_factor",
+    "estimated_waves",
 ]
 
 
 def get_feature_column_name(feature_name: str) -> str:
     return f"f_{FEATURE_VECTOR_FIELDS.index(feature_name)}"
+
+
+def _log1p_feature(value: float) -> float:
+    return math.log1p(max(0.0, value))
 
 
 def build_feature_vector(
@@ -79,12 +87,17 @@ def build_feature_vector(
     tb_m, tb_n, tb_k = kernel_meta.threadblock_shape
     wp_m, wp_n, wp_k = kernel_meta.warp_shape
     inst_m, inst_n, inst_k = kernel_meta.instruction_shape
+    aggregated = list(aggregated_gpu_features) + [0.0] * max(0, 20 - len(aggregated_gpu_features))
+    kernel_stages_value = kernel_meta.extra.get("stages", 0.0)
+    if kernel_stages_value is None:
+        kernel_stages_value = 0.0
+    kernel_stages = float(kernel_stages_value)
 
     return [
         # Problem
-        float(problem.M),
-        float(problem.N),
-        float(problem.K),
+        _log1p_feature(float(problem.M)),
+        _log1p_feature(float(problem.N)),
+        _log1p_feature(float(problem.K)),
         float(problem.split_k_slices),
         # GPU
         float(gpu.num_sms),
@@ -106,8 +119,28 @@ def build_feature_vector(
         float(inst_k),
         float(kernel_meta.split_k_default),
         float(_SWIZZLE_TO_ID.get(kernel_meta.swizzle, -1.0)),
+        kernel_stages,
         # Aggregated analytical features
-        *aggregated_gpu_features,
+        _log1p_feature(float(aggregated[0])),
+        float(aggregated[1]),
+        _log1p_feature(float(aggregated[2])),
+        float(aggregated[3]),
+        float(aggregated[4]),
+        float(aggregated[5]),
+        _log1p_feature(float(aggregated[6])),
+        float(aggregated[7]),
+        float(aggregated[8]),
+        float(aggregated[9]),
+        float(aggregated[10]),
+        float(aggregated[11]),
+        float(aggregated[12]),
+        _log1p_feature(float(aggregated[13])),
+        _log1p_feature(float(aggregated[14])),
+        float(aggregated[15]),
+        _log1p_feature(float(aggregated[16])),
+        float(aggregated[17]),
+        float(aggregated[18]),
+        _log1p_feature(float(aggregated[19])),
     ]
 
 
@@ -133,9 +166,12 @@ def summarize_sm_features(sm_features: list[SmFeatures]) -> dict[str, float]:
             "avg_task_count": 0.0,
             "avg_reuse_a_factor": 1.0,
             "avg_reuse_b_factor": 1.0,
+            "estimated_waves": 0.0,
         }
+    active_sms = sum(1 for item in sm_features if item.task_count > 0)
+    total_tasks = sum(item.task_count for item in sm_features)
     return {
-        "active_sms": float(sum(1 for item in sm_features if item.task_count > 0)),
+        "active_sms": float(active_sms),
         "gpu_total_tensor_ops": float(sum(item.total_tensor_ops for item in sm_features)),
         "gpu_total_tensor_cycles": float(sum(item.total_tensor_cycles for item in sm_features)),
         "gpu_total_bytes_global_raw": float(sum(item.total_bytes_global_raw for item in sm_features)),
@@ -156,4 +192,5 @@ def summarize_sm_features(sm_features: list[SmFeatures]) -> dict[str, float]:
         "avg_task_count": float(sum(item.task_count for item in sm_features) / len(sm_features)),
         "avg_reuse_a_factor": float(sum(item.reuse_a_factor for item in sm_features) / len(sm_features)),
         "avg_reuse_b_factor": float(sum(item.reuse_b_factor for item in sm_features) / len(sm_features)),
+        "estimated_waves": float(total_tasks / max(active_sms, 1)),
     }

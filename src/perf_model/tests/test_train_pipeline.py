@@ -2,6 +2,7 @@ import pandas as pd
 import torch
 
 from perf_model.features.feature_vector import FEATURE_VECTOR_FIELDS
+from perf_model.features.feature_vector import get_feature_column_name
 from perf_model.model.mlp import LatencyMLP
 from perf_model.model.predict import reconstruct_latencies
 from perf_model.pipelines.eval_pipeline import evaluate_frame
@@ -14,7 +15,7 @@ def test_train_from_frame_returns_normalization_metadata() -> None:
         {"latency_us": [10.0, 12.0, 14.0, 16.0], **{f"f_{idx}": [0.0] * 4 for idx in range(feature_count)}}
     )
     frame["f_5"] = [1000.0] * 4
-    frame["f_33"] = [5000.0, 6000.0, 7000.0, 8000.0]
+    frame[get_feature_column_name("max_sm_busy_cycles")] = [5000.0, 6000.0, 7000.0, 8000.0]
 
     result = train_from_frame(frame, hidden_sizes=[8], epochs=3, patience=2, launch_overhead_us=2.5)
 
@@ -29,7 +30,7 @@ def test_train_from_frame_returns_normalization_metadata() -> None:
     assert result.val_metrics["rmse"] >= 0.0
     assert result.val_metrics["mape"] >= 0.0
     assert result.target_kind == "efficiency"
-    assert result.theoretical_cycle_feature == "f_33"
+    assert result.theoretical_cycle_feature == get_feature_column_name("max_sm_busy_cycles")
     assert result.loss_name == "mape"
     assert result.dropout == 0.1
     assert result.use_batch_norm is True
@@ -44,7 +45,7 @@ def test_evaluate_frame_reconstructs_latency_from_efficiency_prediction() -> Non
         }
     )
     frame["f_5"] = [1000.0, 1000.0]
-    frame["f_33"] = [5000.0, 5000.0]
+    frame[get_feature_column_name("max_sm_busy_cycles")] = [5000.0, 5000.0]
     mean = torch.zeros(len(FEATURE_VECTOR_FIELDS), dtype=torch.float32)
     std = torch.ones(len(FEATURE_VECTOR_FIELDS), dtype=torch.float32)
 
@@ -58,7 +59,7 @@ def test_evaluate_frame_reconstructs_latency_from_efficiency_prediction() -> Non
         feature_mean=mean,
         feature_std=std,
         target_kind="efficiency",
-        theoretical_cycle_feature="f_33",
+        theoretical_cycle_feature=get_feature_column_name("max_sm_busy_cycles"),
         launch_overhead_us=0.0,
     )
 
@@ -90,7 +91,7 @@ def test_checkpoint_payload_round_trip_reconstructs_model_inputs() -> None:
         "train_metrics": {"mape": 8.0, "rmse": 2.0},
         "val_metrics": {"mape": 10.0, "rmse": 3.0},
         "target_kind": "efficiency",
-        "theoretical_cycle_feature": "f_33",
+        "theoretical_cycle_feature": get_feature_column_name("max_sm_busy_cycles"),
         "loss_name": "mape",
         "dropout": 0.1,
         "use_batch_norm": True,
@@ -110,7 +111,7 @@ def test_checkpoint_payload_round_trip_reconstructs_model_inputs() -> None:
     assert payload["best_epoch"] == 3
     assert payload["val_metrics"]["mape"] == 10.0
     assert payload["target_kind"] == "efficiency"
-    assert payload["theoretical_cycle_feature"] == "f_33"
+    assert payload["theoretical_cycle_feature"] == get_feature_column_name("max_sm_busy_cycles")
     assert payload["loss_name"] == "mape"
     assert payload["dropout"] == 0.1
     assert payload["use_batch_norm"] is True
